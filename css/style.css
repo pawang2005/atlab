@@ -1,0 +1,16 @@
+.logo-img{
+    height: 9vh;
+    width: auto;
+}
+
+    
+@font-face {
+  font-family: 'poppins';
+  src: url('/images/Fonts/Poppins-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'poppins', sans-serif;
+}

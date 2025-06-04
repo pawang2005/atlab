@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Atlab</title>
+    <style>
+      .logo-img {
+        height: 9vh;
+        width: auto;
+      }
+      @font-face {
+        font-family: "poppins";
+        src: url("/images/Fonts/Poppins-Light.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+        font-family: "poppins", sans-serif;
+        overflow-x: hidden;
+      }
+
+      .mobile-menu {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+      }
+      .mobile-menu.active {
+        transform: translateX(0);
+      }
+
+      .hamburger {
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        transition: all 0.25s;
+        position: relative;
+      }
+      .hamburger-top,
+      .hamburger-middle,
+      .hamburger-bottom {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 24px;
+        height: 2px;
+        background: #003638;
+        transform: rotate(0);
+        transition: all 0.5s;
+      }
+
+      .hamburger-middle {
+        transform: translateY(7px);
+      }
+      .hamburger-bottom {
+        transform: translateY(14px);
+      }
+      .open .hamburger-top {
+        transform: rotate(45deg) translateY(6px) translateX(6px);
+      }
+      .open .hamburger-middle {
+        display: none;
+      }
+      .open .hamburger-bottom {
+        transform: rotate(-45deg) translateY(6px) translateX(-6px);
+      }
+      .section2-div {
+        margin-top: -7vh;
+        margin-left: 10vw;
+        z-index: -10;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="relative">
+      <div class="hidden lg:flex px-14 py-7 flex-row items-center">
+        <div>
+          <a href="">
+            <img
+              src="/images/SECTION 1/Atlab logo.png"
+              class="logo-img"
+              alt="Atlab Logo"
+            />
+          </a>
+        </div>
+        <div class="" style="margin-left: 3vw">
+          <ul
+            class="flex flex-row gap-10 text-xs lg:text-sm"
+            style="color: #003638; font-weight: bold"
+          >
+            <li>
+              <a href="#" class="hover:text-orange-500 transition-colors"
+                >K-12</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-orange-500 transition-colors"
+                >Higher Education</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-orange-500 transition-colors"
+                >Trunkey Projects</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-orange-500 transition-colors"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-orange-500 transition-colors"
+                >Our Group</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-orange-500 transition-colors"
+                >Resources</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div style="margin-left: 10vw; margin-right: 9vw">
+          <button
+            class="text-sm text-white px-4 py-1 hover:bg-orange-600 transition-colors"
+            style="
+              background-color: #ff8c00;
+              border-radius: 50px;
+              font-weight: 400;
+            "
+          >
+            Shop Now
+          </button>
+        </div>
+        <div class="">
+          <span
+            class="text-white text-sm cursor-pointer hover:bg-gray-800 transition-colors"
+            style="
+              background: black;
+              padding: 7px 10px;
+              border-radius: 50%;
+              margin-right: 1vw;
+            "
+            >🔍︎</span
+          >
+        </div>
+        <button
+          class="text-md text-white px-3 py-1 hover:bg-orange-600 transition-colors"
+          style="background-color: #ff8c00; border-radius: 50px"
+        >
+          Contact
+        </button>
+      </div>
+
+      <div class="lg:hidden flex items-center justify-between px-6 py-4">
+        <div>
+          <a href="">
+            <img
+              src="/images/SECTION 1/Atlab logo.png"
+              class="h-12 w-auto"
+              alt="Atlab Logo"
+            />
+          </a>
+        </div>
+
+        <button id="mobile-menu-button" class="hamburger">
+          <div class="hamburger-top"></div>
+          <div class="hamburger-middle"></div>
+          <div class="hamburger-bottom"></div>
+        </button>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="mobile-menu lg:hidden fixed inset-0 bg-white z-50"
+      >
+        <div class="flex flex-col h-full">
+          <div class="flex items-center justify-between px-6 py-4 border-b">
+            <div>
+              <img
+                src="/images/SECTION 1/Atlab logo.png"
+                class="h-12 w-auto"
+                alt="Atlab Logo"
+              />
+            </div>
+            <button id="close-menu" class="hamburger open">
+              <div class="hamburger-top"></div>
+              <div class="hamburger-middle"></div>
+              <div class="hamburger-bottom"></div>
+            </button>
+          </div>
+
+          <div class="flex-1 px-6 py-8">
+            <ul class="space-y-6">
+              <li>
+                <a
+                  href="#"
+                  class="block text-lg font-bold hover:text-orange-500 transition-colors"
+                  style="color: #003638"
+                  >K-12</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block text-lg font-bold hover:text-orange-500 transition-colors"
+                  style="color: #003638"
+                  >Higher Education</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block text-lg font-bold hover:text-orange-500 transition-colors"
+                  style="color: #003638"
+                  >Trunkey Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block text-lg font-bold hover:text-orange-500 transition-colors"
+                  style="color: #003638"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block text-lg font-bold hover:text-orange-500 transition-colors"
+                  style="color: #003638"
+                  >Our Group</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block text-lg font-bold hover:text-orange-500 transition-colors"
+                  style="color: #003638"
+                  >Resources</a
+                >
+              </li>
+            </ul>
+
+            <div class="mt-8 space-y-4">
+              <button
+                class="w-full text-white py-3 px-6 rounded-full hover:bg-orange-600 transition-colors"
+                style="background-color: #ff8c00"
+              >
+                Shop Now
+              </button>
+              <div class="flex items-center justify-center">
+                <span
+                  class="text-white text-lg cursor-pointer hover:bg-gray-800 transition-colors mr-4"
+                  style="
+                    background: black;
+                    padding: 10px 12px;
+                    border-radius: 50%;
+                  "
+                  >🔍︎</span
+                >
+                <button
+                  class="text-white py-2 px-6 rounded-full hover:bg-orange-600 transition-colors"
+                  style="background-color: #ff8c00"
+                >
+                  Contact
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div>
+      <img
+        src="/images/SECTION 2/Main Header image.png.jpg"
+        alt=""
+        style="
+          width: 100%;
+          height: 70vh;
+          z-index: -1000;
+          position: relative;
+          object-fit: cover;
+        "
+      />
+      <div>
+        <div
+          style="width: 35vw; height: 45vh; border-radius: 50px; right: 10vw"
+          class="bg-white flex flex-col justify-center gap-4 px-10 absolute top-1/3"
+        >
+          <div class="text-4xl font-bold">
+            Inspiring Inovation, Empowering Education
+          </div>
+          <div style="margin-bottom: 20px">
+            Empowering educators and institutions with hands on Ed-Tech to Spark
+            curiosity, boost engagement, and transform classroom learning.
+          </div>
+          <div>
+            <button
+              style="background-color: #fbc02d"
+              class="px-10 py-1 text-black font-bold text-sm rounded-2xl"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <img
+          src="/images/SECTION 2/Circle.png"
+          class="absolute"
+          style="height: 70vh; left: -15vw; top: 70vh; z-index: -12"
+          alt=""
+        />
+
+        <img
+          src="/images/SECTION 2/Circle.png"
+          class="relative"
+          style="height: 15vh; left: 6vw; top: 5vh"
+          alt=""
+        />
+
+        <img
+          src="/images/SECTION 2/Circle.png"
+          class="absolute"
+          style="height: 28vh; right: 15vw; top: 70vh; z-index: 12"
+          alt=""
+        />
+      </div>
+      <img
+        src="/images/SECTION 2/Circle.png"
+        class="absolute"
+        style="
+          height: 60vh;
+          right: -10vw;
+          top: 110vh;
+          z-index: 12;
+          object-fit: cover;
+          overflow: hidden;
+        "
+        alt=""
+      />
+      <div>
+        <div>
+          <div
+            style="
+              width: 80vw;
+              height: 45vh;
+              box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+              border-radius: 50px;
+            "
+            class="bg-white flex flex-col justify-center gap-4 px-10 relative section2-div"
+          >
+            <div class="text-4xl font-bold">
+              Inspiring Inovation, Empowering Education
+            </div>
+            <div style="margin-bottom: 20px">
+
+                Empowering educators and institutions with hands on Ed-Tech to
+              Spark curiosity, boost engagement, and transform classroom
+              learning.
+            </div>
+            <div>
+              <button
+                style="background-color: #fbc02d"
+                class="px-10 py-1 text-black font-bold text-sm rounded-2xl"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col items-center justify-center text-center mt-20 p-20"
+      style="
+        border: 1px solid #f0f4f4;
+        border-radius: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <div class="text-5xl font-bold mb-4" style="color: #003638; width: 50%">
+        <h1>Empowering Future Innovators</h1>
+      </div>
+      <div class="text-lg text-gray-700 mb-8 mt-5" style="width: 60%">
+        <p>
+          ATLAB is where technology meets imagination. As a leader in hands-on
+          education solutions, we equip students, teachers, and institutions
+          with the tools to explore, create, and succeed. From coding and
+          robotics to design thinking and AI, our solutions span across K–12 and
+          Higher Education—building tomorrow’s thinkers today
+        </p>
+      </div>
+    </div>
+
+    <div></div>
+
+    <script>
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const closeMenu = document.getElementById("close-menu");
+
+      function toggleMenu() {
+        mobileMenu.classList.toggle("active");
+        mobileMenuButton.classList.toggle("open");
+      }
+
+      function closeMenuFunction() {
+        mobileMenu.classList.remove("active");
+        mobileMenuButton.classList.remove("open");
+      }
+
+      mobileMenuButton.addEventListener("click", toggleMenu);
+      closeMenu.addEventListener("click", closeMenuFunction);
+
+      // Close menu when clicking on menu links
+      const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+      mobileMenuLinks.forEach((link) => {
+        link.addEventListener("click", closeMenuFunction);
+      });
+
+      // Close menu when pressing Escape key
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closeMenuFunction();
+        }
+      });
+    </script>
+  </body>
+</html>
