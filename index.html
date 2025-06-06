@@ -7,8 +7,8 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/style.css">
-    
+    <link rel="stylesheet" href="/css/style.css" />
+
     <title>Atlab</title>
     <style>
       .logo-img {
@@ -74,14 +74,13 @@
         margin-left: 10vw;
         z-index: -10;
       }
-      .tab {
+       .tab {
         display: flex;
         cursor: pointer;
         
-      }
-      .tab {
         padding: 10px 20px;
         margin-right: 5px;
+        
       }
 
       .tab.active {
@@ -99,19 +98,19 @@
       .context.active {
       display: block;
       }
-      .section4-div h1{
+
+      .section4-div h1 {
         font-size: 1.3vw;
         font-weight: 600;
       }
-      .section4-div p{
+      .section4-div p {
         font-size: 0.8vw;
-        font-weight: 400;}
-        .section4-div img{
-          width: 3vw;
-          height: auto;
-        }
-
-
+        font-weight: 400;
+      }
+      .section4-div img {
+        width: 3vw;
+        height: auto;
+      }
     </style>
   </head>
   <body>
@@ -127,7 +126,7 @@
           </a>
         </div>
         <div class="" style="margin-left: 3vw">
-          <img src="/images/SECTION 1/Header sections.png" alt="">
+          <img src="/images/SECTION 1/Header sections.png" alt="" />
           <!-- <ul
             class="flex flex-row gap-10 text-xs lg:text-sm"
             style="color: #003638; font-weight: bold"
@@ -175,7 +174,7 @@
           >
             Shop Now
           </button> -->
-          <img src="/images/SECTION 1/Shop now button.png" alt="">
+          <img src="/images/SECTION 1/Shop now button.png" alt="" />
         </div>
         <div class="">
           <span
@@ -197,7 +196,7 @@
           Contact
         </button> -->
 
-        <img src="/images/SECTION 1/Contact button.png" alt="">
+        <img src="/images/SECTION 1/Contact button.png" alt="" />
       </div>
 
       <div class="lg:hidden flex items-center justify-between px-6 py-4">
@@ -332,30 +331,50 @@
           object-fit: cover;
         "
       />
-      <div>
-        <div
-          style="width: 35vw; height: fit; border-radius: 50px; right: 10vw; top:35vh;"
-          class="bg-white flex flex-col justify-center gap-4 py-10 px-10 absolute"
-        >
-          <div class="text-4xl font-bold">
-            Inspiring Inovation, Empowering Education
+      <div class="main-container">
+        <div class="content-card">
+          <div class="content-slider">
+            <div class="slides-wrapper">
+              <!-- Slide 1 Content -->
+              <div class="slide-content">
+                <div class="title">
+                  Inspiring Innovation, Empowering Education
+                </div>
+                <div class="description">
+                  Empowering educators and institutions with hands on Ed-Tech to
+                  Spark curiosity, boost engagement, and transform classroom
+                  learning.
+                </div>
+              </div>
+
+              <!-- Slide 2 Content -->
+              <div class="slide-content">
+                <div class="title">Transform Learning Experiences</div>
+                <div class="description">
+                  Discover cutting-edge educational technology solutions that
+                  revolutionize how students learn and teachers teach in the
+                  digital age.
+                </div>
+              </div>
+
+              <!-- Slide 3 Content -->
+              <div class="slide-content">
+                <div class="title">Build Tomorrow's Classrooms Today</div>
+                <div class="description">
+                  Connect with innovative tools and resources designed to create
+                  interactive, engaging, and personalized learning environments.
+                </div>
+              </div>
+            </div>
           </div>
-          <div style="margin-bottom: 20px">
-            Empowering educators and institutions with hands on Ed-Tech to Spark
-            curiosity, boost engagement, and transform classroom learning.
-          </div>
-          <div>
-          <div class="he-card-dots" aria-label="Slide navigation dots" role="tablist">
-            <div class="dot" role="tab" aria-selected="true" tabindex="0"></div>
-            <div class="dot" role="tab" aria-selected="false" tabindex="-1"></div>
-            <div class="dot" role="tab" aria-selected="false" tabindex="-1"></div>
-          </div>
-            <button
-              style="background-color: #fbc02d"
-              class="px-10 py-1 text-black font-bold text-sm rounded-2xl"
-            >
-              Learn More
-            </button>
+
+          <div class="controls" style="padding-left: 40px">
+            <button class="learn-more-btn">Learn More</button>
+            <div class="dots-container">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -373,7 +392,7 @@
         <img
           src="/images/SECTION 2/Circle.png"
           class="relative"
-          style="height: 15vh; left: 6vw; top: 5vh"
+          style="height: 15vh; left: 6vw; top: 0vh; z-index: 12"
           alt=""
         />
 
@@ -397,34 +416,41 @@
         "
         alt=""
       />
-      <div>
-        <div>
-          <div
-            style="
-              width: 80vw;
-              height: 45vh;
-              box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
-              border-radius: 50px;
-            "
-            class="bg-white flex flex-col justify-center gap-4 px-10 relative section2-div"
-          >
-            <div class="text-4xl font-bold">
-              Inspiring Inovation, Empowering Education
-            </div>
-            <div style="margin-bottom: 20px">
 
-                Empowering educators and institutions with hands on Ed-Tech to
-              Spark curiosity, boost engagement, and transform classroom
-              learning.
+      <div class="container">
+        <!-- K-12 Education Card -->
+        <div class="education-card" style="border-right: 2px solid rgb(203, 203, 203);">
+          <div class="card-content">
+            <div class="card-header">
+              <h2 class="card-title">K-12 Education</h2>
+              <p class="card-description">
+                Engage students like never before with hands-on learning,
+                creativity, and curiosity. Discover our innovative solutions to
+                capture their imaginations and transform their classroom
+                experience.
+              </p>
             </div>
-            <div>
-              <button
-                style="background-color: #fbc02d"
-                class="px-10 py-1 text-black font-bold text-sm rounded-2xl"
-              >
-                Learn More
+            <div class="btn-container">
+              <button class="explore-btn">
+                Explore K12 Solutions
+                <span class="arrow">→</span>
               </button>
             </div>
+          </div>
+        </div>
+        <div class="education-card">
+          <div class="card-header">
+            <h2 class="card-title">Higher Education</h2>
+            <p class="card-description">
+              Bridge the gap between academics and industry with future-ready
+              labs, real-world tools, and next-gen skills.
+            </p>
+          </div>
+          <div class="btn-container">
+            <button class="explore-btn">
+              Explore HED solutions
+              <span class="arrow">→</span>
+            </button>
           </div>
         </div>
       </div>
@@ -451,511 +477,1094 @@
         </p>
       </div>
     </div>
-    
 
     <div class="text-sm font-bold flex flex-row justify-center items-center gap-8" style="background-color:#eee">
-      <div class="tab active py-2 px-6" onclick="showTab('section1')">K-12 Education</div>
-      <div class="tab py-2 px-6" onclick="showTab('section2')">Higher Education</div>
+      <div class="tab active py-2 px-6" onclick="showTab('section1', this)" style="z-index: 9999;
+position: relative;">K-12 Education</div>
+      <div class="tab py-2 px-6" onclick="showTab('section2', this)">Higher Education</div>
     </div>
-    
-    <div id="section1" class="context active">
-      <div class="flex flex-row justify-between items-center mt-10">
-        <div class="pl-32 flex flex-col" style="width: 70%;">
-          <div class="flex flex-row">
-            <div><span class="text-4xl font-bold mr-8" style="width: 20%;">K-12 <br> Education</span></div>
-            <div class="mt-4"><span class="text-2xl font-bold">Inspiring Young <br> Minds to Build the Future </span></div>
-          </div>
-          <p style="width:50%; margin-bottom: 50px;">Engage every student with hands-on K-12 solutions that bring STEM, AI, Coding and creativity to life</p>
-        </div>
-        <div class="flex" style="width: 30%;">
-          <img src="https://assets.onecompiler.app/43ktx49g5/43ktx4dxy/Circle.png" style="width: 12vw;"  alt="">
-        </div>
-        </div>
-        
 
-  
+    <div id="section1" class="context active" >
+      <div class="flex flex-row justify-between items-center mt-10">
+        <div class="pl-32 flex flex-col" style="width: 70%">
+          <div class="flex flex-row">
+            <div>
+              <span class="text-4xl font-bold mr-8" style="width: 20%"
+                >K-12 <br />
+                Education</span
+              >
+            </div>
+            <div class="mt-4">
+              <span class="text-2xl font-bold"
+                >Inspiring Young <br />
+                Minds to Build the Future
+              </span>
+            </div>
+          </div>
+      
+          <p style="width: 50%; margin-bottom: 50px">
+            Engage every student with hands-on K-12 solutions that bring STEM,
+            AI, Coding and creativity to life
+          </p>
+        </div>
+        <div class="flex" style="width: 30%">
+          <img
+            src="https://assets.onecompiler.app/43ktx49g5/43ktx4dxy/Circle.png"
+            style="width: 12vw"
+            alt=""
+          />
+        </div>
+      </div>
+
       <div class="pl-32 flex">
-        <div class="gird gap-4 text-white" style="display:grid; grid-template-columns: repeat(3, 1fr); width: 72%; ">
-          <div class="p-3" style="background-color: #2a81a3; border-radius: 10px; height: fit-content; min-height: 38vh;">
-            <div class="p-4" style="border: 1px dashed white; border-radius:10px;min-height: 34vh;">
-              <img src="/images/SECTION 2/Card 1 icon.png" style="width: 4vw;" alt="">
-              <h1 style="font-weight: 700; margin-top: 15px;">Coding & Robotics</h1>
-              <p style="font-size: x-small; margin-top: 15px;">Introducing students to programming and robotics to enhance computational thinking and problem-solving skills.</p>
+        <div
+          class="gird gap-4 text-white"
+          style="
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 72%;
+          "
+        >
+          <div
+            class="p-3"
+            style="
+              background-color: #2a81a3;
+              border-radius: 10px;
+              height: fit-content;
+              min-height: 38vh;
+            "
+          >
+            <div
+              class="p-4"
+              style="
+                border: 1px dashed white;
+                border-radius: 10px;
+                min-height: 34vh;
+              "
+            >
+              <img
+                src="/images/SECTION 2/Card 1 icon.png"
+                style="width: 4vw"
+                alt=""
+              />
+              <h1 style="font-weight: 700; margin-top: 15px">
+                Coding & Robotics
+              </h1>
+              <p style="font-size: x-small; margin-top: 15px">
+                Introducing students to programming and robotics to enhance
+                computational thinking and problem-solving skills.
+              </p>
             </div>
           </div>
-          <div class="p-3" style="background-color: #dc8849; border-radius: 10px; height: fit-content;min-height: 38vh;">
-            <div class="p-4" style="border: 1px dashed white; border-radius:10px; min-height: 34vh;">
-              <img src="/images/SECTION 2/Card 2 icon.png" style="width: 4vw;" alt="">
-              <h1 style="font-weight: 700; margin-top: 15px;">Science</h1>
-              <p style="font-size: x-small; margin-top: 15px;">Offering resources in areas like physics, chemistry, and biology to deepen scientific understanding.</p>
+          <div
+            class="p-3"
+            style="
+              background-color: #dc8849;
+              border-radius: 10px;
+              height: fit-content;
+              min-height: 38vh;
+            "
+          >
+            <div
+              class="p-4"
+              style="
+                border: 1px dashed white;
+                border-radius: 10px;
+                min-height: 34vh;
+              "
+            >
+              <img
+                src="/images/SECTION 2/Card 2 icon.png"
+                style="width: 4vw"
+                alt=""
+              />
+              <h1 style="font-weight: 700; margin-top: 15px">Science</h1>
+              <p style="font-size: x-small; margin-top: 15px">
+                Offering resources in areas like physics, chemistry, and biology
+                to deepen scientific understanding.
+              </p>
             </div>
           </div>
-          <div class="p-3" style="background-color: #4da438; border-radius: 10px; height: fit-content;min-height: 38vh;">
-            <div class="p-4" style="border: 1px dashed white; border-radius:10px; min-height: 34vh;">
-              <img src="/images/SECTION 2/Card 3 icon.png" style="width: 4vw;" alt="">
-              <h1 style="font-weight: 700; margin-top: 15px;">Immersive Learning</h1>
-              <p style="font-size: x-small; margin-top: 15px;">Utilizing tools such as ClassVR to create engaging learning experiences through virtual reality.</p>
+          <div
+            class="p-3"
+            style="
+              background-color: #4da438;
+              border-radius: 10px;
+              height: fit-content;
+              min-height: 38vh;
+            "
+          >
+            <div
+              class="p-4"
+              style="
+                border: 1px dashed white;
+                border-radius: 10px;
+                min-height: 34vh;
+              "
+            >
+              <img
+                src="/images/SECTION 2/Card 3 icon.png"
+                style="width: 4vw"
+                alt=""
+              />
+              <h1 style="font-weight: 700; margin-top: 15px">
+                Immersive Learning
+              </h1>
+              <p style="font-size: x-small; margin-top: 15px">
+                Utilizing tools such as ClassVR to create engaging learning
+                experiences through virtual reality.
+              </p>
             </div>
           </div>
-          <div class="p-3" style="background-color: #e2a635; border-radius: 10px; height: fit-content;min-height: 38vh;">
-            <div class="p-4" style="border: 1px dashed white; border-radius:10px; min-height: 34vh;">
-              <img src="/images/SECTION 2/Card 4 icon.png" style="width: 4vw;" alt="">
-              <h1 style="font-weight: 700; margin-top: 15px;">Hybrid Learning</h1>
-              <p style="font-size: x-small; margin-top: 15px;">Combining traditional classroom methods with digital tools to provide flexible learning options for students.</p>
+          <div
+            class="p-3"
+            style="
+              background-color: #e2a635;
+              border-radius: 10px;
+              height: fit-content;
+              min-height: 38vh;
+            "
+          >
+            <div
+              class="p-4"
+              style="
+                border: 1px dashed white;
+                border-radius: 10px;
+                min-height: 34vh;
+              "
+            >
+              <img
+                src="/images/SECTION 2/Card 4 icon.png"
+                style="width: 4vw"
+                alt=""
+              />
+              <h1 style="font-weight: 700; margin-top: 15px">
+                Hybrid Learning
+              </h1>
+              <p style="font-size: x-small; margin-top: 15px">
+                Combining traditional classroom methods with digital tools to
+                provide flexible learning options for students.
+              </p>
             </div>
           </div>
-          <div class="p-3" style="background-color: #9f4e51; border-radius: 10px; height: fit-content;min-height: 38vh;">
-            <div class="p-4" style="border: 1px dashed white; border-radius:10px; min-height: 34vh;">
-              <img src="/images/SECTION 2/Card 5 icon.png" style="width: 3vw;" alt="">
-              <h1 style="font-weight: 700; margin-top: 15px;">Design Thinking</h1>
-              <p style="font-size: x-small; margin-top: 15px;">Encouraging creativity and innovation through hands-on projects and 3D printing technologies.</p>
+          <div
+            class="p-3"
+            style="
+              background-color: #9f4e51;
+              border-radius: 10px;
+              height: fit-content;
+              min-height: 38vh;
+            "
+          >
+            <div
+              class="p-4"
+              style="
+                border: 1px dashed white;
+                border-radius: 10px;
+                min-height: 34vh;
+              "
+            >
+              <img
+                src="/images/SECTION 2/Card 5 icon.png"
+                style="width: 3vw"
+                alt=""
+              />
+              <h1 style="font-weight: 700; margin-top: 15px">
+                Design Thinking
+              </h1>
+              <p style="font-size: x-small; margin-top: 15px">
+                Encouraging creativity and innovation through hands-on projects
+                and 3D printing technologies.
+              </p>
             </div>
           </div>
-          <div class="p-3" style="background-color: #3599bf; border-radius: 10px; height: fit-content;min-height: 38vh;">
-            <div class="p-4" style="border: 1px dashed white; border-radius:10px; min-height: 34vh;">
-              <img src="/images/SECTION 2/Card 6 icon.png" style="width: 3vw;" alt="">
-              <h1 style="font-weight: 700; margin-top: 15px;">AI & Drones</h1>
-              <p style="font-size: x-small; margin-top: 15px;">Introducing artificial intelligence concepts and drone technology to prepare students for future technological advancements.</p>
+          <div
+            class="p-3"
+            style="
+              background-color: #3599bf;
+              border-radius: 10px;
+              height: fit-content;
+              min-height: 38vh;
+            "
+          >
+            <div
+              class="p-4"
+              style="
+                border: 1px dashed white;
+                border-radius: 10px;
+                min-height: 34vh;
+              "
+            >
+              <img
+                src="/images/SECTION 2/Card 6 icon.png"
+                style="width: 3vw"
+                alt=""
+              />
+              <h1 style="font-weight: 700; margin-top: 15px">AI & Drones</h1>
+              <p style="font-size: x-small; margin-top: 15px">
+                Introducing artificial intelligence concepts and drone
+                technology to prepare students for future technological
+                advancements.
+              </p>
             </div>
           </div>
         </div>
 
         <div class="ml-4">
-          <img src="/images/SECTION 2/K12 Main image.png" style="width: 30vw;"  alt="">
+          <img
+            src="/images/SECTION 2/K12 Main image.png"
+            style="width: 30vw"
+            alt=""
+          />
         </div>
       </div>
-      
     </div>
-      
-    
+
     <!-- Section 2 -->
     <div id="section2" class="context">
-        
-      <div class="flex flex-row justify-between" style="height: 70vh; background-image: url('images/HED Tab Open File/Higher Education-assets/Higher education tab holder.png'); background-size: cover; background-position: center; margin-top: -25px;">
-        <div class="pl-32 flex flex-col justify-center" style="width: 50%; color: white; margin-top: -210px;"> 
+    
+      <div
+        class="flex flex-row justify-between"
+        style="
+          height: 70vh;
+          background-image: url('images/HED Tab Open File/Higher Education-assets/Higher education tab holder.png');
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div
+          class="pl-32 flex flex-col justify-center"
+          style="width: 50%; color: white; margin-top: -210px"
+        >
           <div class="flex flex-row items-start">
             <div>
-              <span class="text-4xl font-bold mr-8" style="width: 20%;">
-                Higher<br>Education
+              <span class="text-4xl font-bold mr-8" style="width: 20%">
+                Higher<br />Education
               </span>
             </div>
             <div class="mt-2">
               <span class="text-2xl font-bold">
-                Where Innovation<br>Meets Application
+                Where Innovation<br />Meets Application
               </span>
             </div>
           </div>
-          <p class="mt-4" style="width: 90%;">
-            Industry-aligned labs designed to turn students into future-ready professionals.
+          <p class="mt-4" style="width: 90%">
+            Industry-aligned labs designed to turn students into future-ready
+            professionals.
           </p>
         </div>
-      
-        <div class="flex items-center justify-end gap-4 pr-16" style="width: 50%; margin-top: -210px;">
-          <img src="/images/HED Tab Open File/Higher Education-assets/Circle shape.png" style="width: 10vw; height: 10vw; border-radius: 50%; margin-top: -60px;" alt="Yellow Circle">
-          <img src="/images/HED Tab Open File/Higher Education-assets/Higher education vector.png" style="height: 30vh;" alt="Student Illustration">
+
+        <div
+          class="flex items-center justify-end gap-4 pr-16"
+          style="width: 50%; margin-top: -210px"
+        >
+          <img
+            src="/images/HED Tab Open File/Higher Education-assets/Circle shape.png"
+            style="
+              width: 10vw;
+              height: 10vw;
+              border-radius: 50%;
+              margin-top: -60px;
+            "
+            alt="Yellow Circle"
+          />
+          <img
+            src="/images/HED Tab Open File/Higher Education-assets/Higher education vector.png"
+            style="height: 30vh"
+            alt="Student Illustration"
+          />
         </div>
       </div>
-      
-        <div class="he-card-container">
-          <div class="he-card">
-            <img class="he-bg" src="/images/HED Tab Open File/Higher Education-assets/Card 1.png" alt="Card Background">
-            <div class="he-content">
-              <img class="he-icon" src="/images/HED Tab Open File/Higher Education-assets/Icon 1.png" alt="Icon">
-              <p class="he-text">Communications<br>Engineering</p>
-            </div>
-          </div>
-          
-          <div class="he-card">
-            <img class="he-bg" src="/images/HED Tab Open File/Higher Education-assets/Card 2.png" alt="Card Background">
-            <div class="he-content">
-              <img class="he-icon" src="/images/HED Tab Open File/Higher Education-assets/Icon 2.png" alt="Icon">
-              <p class="he-text">Communications<br>Engineering</p>
-            </div>
-          </div>
-          
-          <div class="he-card">
-            <img class="he-bg" src="/images/HED Tab Open File/Higher Education-assets/Card 3.png" alt="Card Background">
-            <div class="he-content">
-              <img class="he-icon" src="/images/HED Tab Open File/Higher Education-assets/Icon 3.png" alt="Icon">
-              <p class="he-text">Communications<br>Engineering</p>
-            </div>
-          </div>
-          
-          <div class="he-card">
-            <img class="he-bg" src="/images/HED Tab Open File/Higher Education-assets/Card 4.png" alt="Card Background">
-            <div class="he-content">
-              <img class="he-icon" src="/images/HED Tab Open File/Higher Education-assets/Icon 4.png" alt="Icon">
-              <p class="he-text">Communications<br>Engineering</p>
-            </div>
-          </div>
-          
-          <div class="he-card">
-            <img class="he-bg" src="/images/HED Tab Open File/Higher Education-assets/Card 5.png" alt="Card Background">
-            <div class="he-content">
-              <img class="he-icon" src="/images/HED Tab Open File/Higher Education-assets/Icon 5.png" alt="Icon">
-              <p class="he-text">Communications<br>Engineering</p>
-            </div>
-          </div>
-          
-          <div class="he-card">
-            <img class="he-bg" src="/images/HED Tab Open File/Higher Education-assets/Card 6.png" alt="Card Background">
-            <div class="he-content">
-              <img class="he-icon" src="/images/HED Tab Open File/Higher Education-assets/Icon 6.png" alt="Icon">
-              <p class="he-text">Communications<br>Engineering</p>
-            </div>
-          </div>
-          
-          <div class="he-card">
-            <img class="he-bg" src="/images/HED Tab Open File/Higher Education-assets/Card 7.png" alt="Card Background">
-            <div class="he-content">
-              <img class="he-icon" src="/images/HED Tab Open File/Higher Education-assets/Icon 7.png" alt="Icon">
-              <p class="he-text">Communications<br>Engineering</p>
-            </div>
-          </div>
-          
-          <div class="he-card">
-            <img class="he-bg" src="/images/HED Tab Open File/Higher Education-assets/Card 8.png" alt="Card Background">
-            <div class="he-content">
-              <img class="he-icon" src="/images/HED Tab Open File/Higher Education-assets/Icon 8.png" alt="Icon">
-              <p class="he-text">Communications<br>Engineering</p>
-            </div>
-          </div>
-          
-          <div class="he-card">
-            <img class="he-bg" src="/images/HED Tab Open File/Higher Education-assets/Card 9.png" alt="Card Background">
-            <div class="he-content">
-              <img class="he-icon" src="/images/HED Tab Open File/Higher Education-assets/Icon 9.png" alt="Icon">
-              <p class="he-text">Communications<br>Engineering</p>
-            </div>
-          </div>
-          
-          <div class="he-card">
-            <img class="he-bg" src="/images/HED Tab Open File/Higher Education-assets/Card 10.png" alt="Card Background">
-            <div class="he-content">
-              <img class="he-icon" src="/images/HED Tab Open File/Higher Education-assets/Icon 10.png" alt="Icon">
-              <p class="he-text">Communications<br>Engineering</p>
-            </div>
-          </div>
-          
-            <div class="he-card">
-              <img class="he-bg" src="/images/HED Tab Open File/Higher Education-assets/Card 11.png" alt="Card Background">
-              <div class="he-content">
-                <img class="he-icon" src="/images/HED Tab Open File/Higher Education-assets/Icon 11.png" alt="Icon">
-                <p class="he-text">Communications<br>Engineering</p>
-              </div>
-            </div>
-            
-            <div class="he-card">
-              <img class="he-bg" src="/images/HED Tab Open File/Higher Education-assets/Card 12.png" alt="Card Background">
-              <div class="he-content">
-                <img class="he-icon" src="/images/HED Tab Open File/Higher Education-assets/Icon 12.png" alt="Icon">
-                <p class="he-text">Communications<br>Engineering</p>
-              </div>
-            </div>
-            
-            <div class="he-card">
-              <img class="he-bg" src="/images/HED Tab Open File/Higher Education-assets/Card 13.png" alt="Card Background">
-              <div class="he-content">
-                <img class="he-icon" src="/images/HED Tab Open File/Higher Education-assets/Icon 13.png" alt="Icon">
-                <p class="he-text">Communications<br>Engineering</p>
-              </div>
-            </div>
-            
-            <div class="he-card">
-              <img class="he-bg" src="/images/HED Tab Open File/Higher Education-assets/Card 14.png" alt="Card Background">
-              <div class="he-content">
-                <img class="he-icon" src="/images/HED Tab Open File/Higher Education-assets/Icon 14.png" alt="Icon">
-                <p class="he-text">Communications<br>Engineering</p>
-              </div>
-            </div>
-            
-            <div class="he-card">
-              <img class="he-bg" src="/images/HED Tab Open File/Higher Education-assets/Card 15.png" alt="Card Background">
-              <div class="he-content">
-                <img class="he-icon" src="/images/HED Tab Open File/Higher Education-assets/Icon 15.png" alt="Icon">
-                <p class="he-text">Communications<br>Engineering</p>
-              </div>
-            </div>
-            
-            <div class="he-card">
-              <img class="he-bg" src="/images/HED Tab Open File/Higher Education-assets/Card 16.png" alt="Card Background">
-              <div class="he-content">
-                <img class="he-icon" src="/images/HED Tab Open File/Higher Education-assets/Icon 16.png" alt="Icon">
-                <p class="he-text">Communications<br>Engineering</p>
-              </div>
-            </div>
-            
-            <div class="he-card">
-              <img class="he-bg" src="/images/HED Tab Open File/Higher Education-assets/Card 17.png" alt="Card Background">
-              <div class="he-content">
-                <img class="he-icon" src="/images/HED Tab Open File/Higher Education-assets/Icon 17.png" alt="Icon">
-                <p class="he-text">Communications<br>Engineering</p>
-              </div>
-            </div>
-            
-            <div class="he-card">
-              <img class="he-bg" src="/images/HED Tab Open File/Higher Education-assets/Card 18.png" alt="Card Background">
-              <div class="he-content">
-                <img class="he-icon" src="/images/HED Tab Open File/Higher Education-assets/Icon 18.png" alt="Icon">
-                <p class="he-text">Communications<br>Engineering</p>
-              </div>
-            </div>
-            
-            <div class="he-card">
-              <img class="he-bg" src="/images/HED Tab Open File/Higher Education-assets/Card 19.png" alt="Card Background">
-              <div class="he-content">
-                <img class="he-icon" src="/images/HED Tab Open File/Higher Education-assets/Icon 19.png" alt="Icon">
-                <p class="he-text">Communications<br>Engineering</p>
-              </div>
-            </div>
-          
 
+      <div class="he-card-container">
+        <div class="he-card">
+          <img
+            class="he-bg"
+            src="/images/HED Tab Open File/Higher Education-assets/Card 1.png"
+            alt="Card Background"
+          />
+          <div class="he-content">
+            <img
+              class="he-icon"
+              src="/images/HED Tab Open File/Higher Education-assets/Icon 1.png"
+              alt="Icon"
+            />
+            <p class="he-text">Communications<br />Engineering</p>
+          </div>
         </div>
-      
+
+        <div class="he-card">
+          <img
+            class="he-bg"
+            src="/images/HED Tab Open File/Higher Education-assets/Card 2.png"
+            alt="Card Background"
+          />
+          <div class="he-content">
+            <img
+              class="he-icon"
+              src="/images/HED Tab Open File/Higher Education-assets/Icon 2.png"
+              alt="Icon"
+            />
+            <p class="he-text">Communications<br />Engineering</p>
+          </div>
+        </div>
+
+        <div class="he-card">
+          <img
+            class="he-bg"
+            src="/images/HED Tab Open File/Higher Education-assets/Card 3.png"
+            alt="Card Background"
+          />
+          <div class="he-content">
+            <img
+              class="he-icon"
+              src="/images/HED Tab Open File/Higher Education-assets/Icon 3.png"
+              alt="Icon"
+            />
+            <p class="he-text">Communications<br />Engineering</p>
+          </div>
+        </div>
+
+        <div class="he-card">
+          <img
+            class="he-bg"
+            src="/images/HED Tab Open File/Higher Education-assets/Card 4.png"
+            alt="Card Background"
+          />
+          <div class="he-content">
+            <img
+              class="he-icon"
+              src="/images/HED Tab Open File/Higher Education-assets/Icon 4.png"
+              alt="Icon"
+            />
+            <p class="he-text">Communications<br />Engineering</p>
+          </div>
+        </div>
+
+        <div class="he-card">
+          <img
+            class="he-bg"
+            src="/images/HED Tab Open File/Higher Education-assets/Card 5.png"
+            alt="Card Background"
+          />
+          <div class="he-content">
+            <img
+              class="he-icon"
+              src="/images/HED Tab Open File/Higher Education-assets/Icon 5.png"
+              alt="Icon"
+            />
+            <p class="he-text">Communications<br />Engineering</p>
+          </div>
+        </div>
+
+        <div class="he-card">
+          <img
+            class="he-bg"
+            src="/images/HED Tab Open File/Higher Education-assets/Card 6.png"
+            alt="Card Background"
+          />
+          <div class="he-content">
+            <img
+              class="he-icon"
+              src="/images/HED Tab Open File/Higher Education-assets/Icon 6.png"
+              alt="Icon"
+            />
+            <p class="he-text">Communications<br />Engineering</p>
+          </div>
+        </div>
+
+        <div class="he-card">
+          <img
+            class="he-bg"
+            src="/images/HED Tab Open File/Higher Education-assets/Card 7.png"
+            alt="Card Background"
+          />
+          <div class="he-content">
+            <img
+              class="he-icon"
+              src="/images/HED Tab Open File/Higher Education-assets/Icon 7.png"
+              alt="Icon"
+            />
+            <p class="he-text">Communications<br />Engineering</p>
+          </div>
+        </div>
+
+        <div class="he-card">
+          <img
+            class="he-bg"
+            src="/images/HED Tab Open File/Higher Education-assets/Card 8.png"
+            alt="Card Background"
+          />
+          <div class="he-content">
+            <img
+              class="he-icon"
+              src="/images/HED Tab Open File/Higher Education-assets/Icon 8.png"
+              alt="Icon"
+            />
+            <p class="he-text">Communications<br />Engineering</p>
+          </div>
+        </div>
+
+        <div class="he-card">
+          <img
+            class="he-bg"
+            src="/images/HED Tab Open File/Higher Education-assets/Card 9.png"
+            alt="Card Background"
+          />
+          <div class="he-content">
+            <img
+              class="he-icon"
+              src="/images/HED Tab Open File/Higher Education-assets/Icon 9.png"
+              alt="Icon"
+            />
+            <p class="he-text">Communications<br />Engineering</p>
+          </div>
+        </div>
+
+        <div class="he-card">
+          <img
+            class="he-bg"
+            src="/images/HED Tab Open File/Higher Education-assets/Card 10.png"
+            alt="Card Background"
+          />
+          <div class="he-content">
+            <img
+              class="he-icon"
+              src="/images/HED Tab Open File/Higher Education-assets/Icon 10.png"
+              alt="Icon"
+            />
+            <p class="he-text">Communications<br />Engineering</p>
+          </div>
+        </div>
+
+        <div class="he-card">
+          <img
+            class="he-bg"
+            src="/images/HED Tab Open File/Higher Education-assets/Card 11.png"
+            alt="Card Background"
+          />
+          <div class="he-content">
+            <img
+              class="he-icon"
+              src="/images/HED Tab Open File/Higher Education-assets/Icon 11.png"
+              alt="Icon"
+            />
+            <p class="he-text">Communications<br />Engineering</p>
+          </div>
+        </div>
+
+        <div class="he-card">
+          <img
+            class="he-bg"
+            src="/images/HED Tab Open File/Higher Education-assets/Card 12.png"
+            alt="Card Background"
+          />
+          <div class="he-content">
+            <img
+              class="he-icon"
+              src="/images/HED Tab Open File/Higher Education-assets/Icon 12.png"
+              alt="Icon"
+            />
+            <p class="he-text">Communications<br />Engineering</p>
+          </div>
+        </div>
+
+        <div class="he-card">
+          <img
+            class="he-bg"
+            src="/images/HED Tab Open File/Higher Education-assets/Card 13.png"
+            alt="Card Background"
+          />
+          <div class="he-content">
+            <img
+              class="he-icon"
+              src="/images/HED Tab Open File/Higher Education-assets/Icon 13.png"
+              alt="Icon"
+            />
+            <p class="he-text">Communications<br />Engineering</p>
+          </div>
+        </div>
+
+        <div class="he-card">
+          <img
+            class="he-bg"
+            src="/images/HED Tab Open File/Higher Education-assets/Card 14.png"
+            alt="Card Background"
+          />
+          <div class="he-content">
+            <img
+              class="he-icon"
+              src="/images/HED Tab Open File/Higher Education-assets/Icon 14.png"
+              alt="Icon"
+            />
+            <p class="he-text">Communications<br />Engineering</p>
+          </div>
+        </div>
+
+        <div class="he-card">
+          <img
+            class="he-bg"
+            src="/images/HED Tab Open File/Higher Education-assets/Card 15.png"
+            alt="Card Background"
+          />
+          <div class="he-content">
+            <img
+              class="he-icon"
+              src="/images/HED Tab Open File/Higher Education-assets/Icon 15.png"
+              alt="Icon"
+            />
+            <p class="he-text">Communications<br />Engineering</p>
+          </div>
+        </div>
+
+        <div class="he-card">
+          <img
+            class="he-bg"
+            src="/images/HED Tab Open File/Higher Education-assets/Card 16.png"
+            alt="Card Background"
+          />
+          <div class="he-content">
+            <img
+              class="he-icon"
+              src="/images/HED Tab Open File/Higher Education-assets/Icon 16.png"
+              alt="Icon"
+            />
+            <p class="he-text">Communications<br />Engineering</p>
+          </div>
+        </div>
+
+        <div class="he-card">
+          <img
+            class="he-bg"
+            src="/images/HED Tab Open File/Higher Education-assets/Card 17.png"
+            alt="Card Background"
+          />
+          <div class="he-content">
+            <img
+              class="he-icon"
+              src="/images/HED Tab Open File/Higher Education-assets/Icon 17.png"
+              alt="Icon"
+            />
+            <p class="he-text">Communications<br />Engineering</p>
+          </div>
+        </div>
+
+        <div class="he-card">
+          <img
+            class="he-bg"
+            src="/images/HED Tab Open File/Higher Education-assets/Card 18.png"
+            alt="Card Background"
+          />
+          <div class="he-content">
+            <img
+              class="he-icon"
+              src="/images/HED Tab Open File/Higher Education-assets/Icon 18.png"
+              alt="Icon"
+            />
+            <p class="he-text">Communications<br />Engineering</p>
+          </div>
+        </div>
+
+        <div class="he-card">
+          <img
+            class="he-bg"
+            src="/images/HED Tab Open File/Higher Education-assets/Card 19.png"
+            alt="Card Background"
+          />
+          <div class="he-content">
+            <img
+              class="he-icon"
+              src="/images/HED Tab Open File/Higher Education-assets/Icon 19.png"
+              alt="Icon"
+            />
+            <p class="he-text">Communications<br />Engineering</p>
+          </div>
+        </div>
+      </div>
     </div>
-    
+
     <div class="partners-container">
       <div class="partners-section">
-          <h2 class="partners-header">Our Partners</h2>
-          <div class="partners-logos-wrapper">
-              <img src="images/SECTION 3/partner-logo-top.png" alt="Our Partners Logos" class="partners-logos-image">
-          </div>
+        <h2 class="partners-header">Our Partners</h2>
+        <div class="partners-logos-wrapper">
+          <img
+            src="images/SECTION 3/partner-logo-top.png"
+            alt="Our Partners Logos"
+            class="partners-logos-image"
+          />
+        </div>
       </div>
     </div>
-    <div class="relative" style="height: 170vh;">
-      <img src="/images/SECTION 3/Circle shape 22.png" style="width: 30vw; position: absolute; top:-8vh; left:9vw;">
-      <img src="/images/SECTION 3/ATLAB Trusted partner Holder .png" alt="" class="relative">
+    <div class="relative" style="height: 170vh">
+      <img
+        src="/images/SECTION 3/Circle shape 22.png"
+        style="width: 30vw; position: absolute; top: -8vh; left: 9vw"
+      />
+      <img
+        src="/images/SECTION 3/ATLAB Trusted partner Holder .png"
+        alt=""
+        class="relative"
+      />
       <div class="absolute">
-        <h1 class="relative" style="bottom: 141vh;
-        left: 49vw;
-        position: relative;
-        color: white;
-        font-family: 'poppins';
-        font-weight: 900;
-        font-size: 40px;
-        margin-top: 80px;" >Atlab - Your Trusted <br> Partner in Education</h1>
+        <h1
+          class="relative"
+          style="
+            bottom: 141vh;
+            left: 49vw;
+            position: relative;
+            color: white;
+            font-family: 'poppins';
+            font-weight: 900;
+            font-size: 40px;
+            margin-top: 80px;
+          "
+        >
+          Atlab - Your Trusted <br />
+          Partner in Education
+        </h1>
       </div>
-      <div class="absolute"  style="bottom: 110vh;
-      left: 40vw;
-      position: relative;
-      color: white;
-      font-family: 'poppins';
-      font-weight: 500;
-      font-size: 12px;
-      width: 50%;">
+      <div
+        class="absolute"
+        style="
+          bottom: 110vh;
+          left: 40vw;
+          position: relative;
+          color: white;
+          font-family: 'poppins';
+          font-weight: 500;
+          font-size: 12px;
+          width: 50%;
+        "
+      >
         <p class="relative">
-          With a commitment to excellence in education technology, ATLAB stands as a trusted partner for schools, universities, and training institutions worldwide. Our expertise, global reach, and hands-on approach set us apart in the industry, enabling us to deliver complete learning ecosystems that drive innovation and real-world learning experiences.
+          With a commitment to excellence in education technology, ATLAB stands
+          as a trusted partner for schools, universities, and training
+          institutions worldwide. Our expertise, global reach, and hands-on
+          approach set us apart in the industry, enabling us to deliver complete
+          learning ecosystems that drive innovation and real-world learning
+          experiences.
         </p>
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 40px;">
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 40px;
+          "
+        >
           <div class="section4-div">
-            <img src="/images/SECTION 3/Icon 1.png" alt="">
+            <img src="/images/SECTION 3/Icon 1.png" alt="" />
             <h1>400+ Years of Expertise. One Vision.</h1>
-            <p>Transform classrooms into dynamic hubs with 400+ man-years of combined experience.</p>
+            <p>
+              Transform classrooms into dynamic hubs with 400+ man-years of
+              combined experience.
+            </p>
           </div>
           <div class="section4-div">
-            <img src="/images/SECTION 3/Icon 2.png" alt="">
+            <img src="/images/SECTION 3/Icon 2.png" alt="" />
             <h1>Your Vision, Our Blueprint.</h1>
             <p>End-to-end lab design integrated with your educational goals.</p>
           </div>
           <div class="section4-div">
-            <img src="/images/SECTION 3/Icon 3.png" alt="">
+            <img src="/images/SECTION 3/Icon 3.png" alt="" />
             <h1>Growth Partners, Not Vendors.</h1>
-            <p>We are here to mentor and co-create labs that amplify curriculum impact and provide real-world skills.</p>
+            <p>
+              We are here to mentor and co-create labs that amplify curriculum
+              impact and provide real-world skills.
+            </p>
           </div>
           <div class="section4-div">
-            <img src="/images/SECTION 3/Icon 4.png" alt="">
+            <img src="/images/SECTION 3/Icon 4.png" alt="" />
             <h1>Built for Educators by Students.</h1>
-            <p>Tools that teach Knowledge through experiments. Versatile teaching resources for every student.</p>
+            <p>
+              Tools that teach Knowledge through experiments. Versatile teaching
+              resources for every student.
+            </p>
           </div>
           <div class="section4-div">
-            <img src="/images/SECTION 3/Icon 5.png" alt="">
+            <img src="/images/SECTION 3/Icon 5.png" alt="" />
             <h1>Precision Meets Practicality.</h1>
-            <p>With Certified professionals and high-accuracy setups as per international standards.</p>
+            <p>
+              With Certified professionals and high-accuracy setups as per
+              international standards.
+            </p>
           </div>
           <div class="section4-div">
-            <img src="/images/SECTION 3/Icon 6.png" alt="">
+            <img src="/images/SECTION 3/Icon 6.png" alt="" />
             <h1>Seamless Support, Always.</h1>
-            <p>Our AMC's are maintenance-free with 24/7 monitoring support across all nations.</p>
+            <p>
+              Our AMC's are maintenance-free with 24/7 monitoring support across
+              all nations.
+            </p>
           </div>
         </div>
       </div>
     </div>
 
     <div class="pl-32">
-      <h1 style="" class="text-4xl font-bold mb-10">You Power Education. We Power You.</h1>
-      <p class="text-sm mb-20">Whether you are an educator, instructor, or faculty - ATLAB <br> offers tailored solutions that empower every step of the <br> educational journey.</p>
+      <h1 style="" class="text-4xl font-bold mb-10">
+        You Power Education. We Power You.
+      </h1>
+      <p class="text-sm mb-20">
+        Whether you are an educator, instructor, or faculty - ATLAB <br />
+        offers tailored solutions that empower every step of the <br />
+        educational journey.
+      </p>
     </div>
-      <div class="flex flex-row justify-center items-center gap-1">
-        <div class="flex flex-col justify-center items-center">
-          <img src="/images/section 4/Sec 4_ Image 1.png" style="width: 16vw ; height: 25vh; margin-bottom: 20px;" alt="">
-          <span class="text-center" style="width: 22vw;font-size: small;border-bottom: 1px solid #000; margin-bottom: 20px; background-color: #003638; color:white; padding: 4px 30px;">
-            For Educational Institutions
-          </span>
-          <span class="text-center" style="width: 22vw;font-size: small;border-bottom: 3px solid rgb(189, 189, 189); margin-bottom: 20px; background-color: white; color:#003638; padding: 20px 30px;">
-            For Educational Institutions
-          </span>
-          <span class="text-center" style="width: 22vw;font-size: small; margin-bottom: 20px; background-color: white; color: #003638; padding: 4px 30px;">
-            For Educational Institutions
-          </span>
-        </div>
-        <div class="flex flex-col justify-center items-center">
-          <img src="/images/section 4/Sec 4_ Image 2.png" style="width: 16vw; height: 25vh; margin-bottom: 20px;" alt="">
-          <span class="text-center" style="width: 22vw;font-size: small;border-bottom: 1px solid #000; margin-bottom: 20px; background-color: #003638; color:white; padding: 4px 30px;">
-            For Educational Institutions
-          </span>
-          <span class="text-center" style="width: 22vw;font-size: small;border-bottom: 3px solid rgb(189, 189, 189); margin-bottom: 20px; background-color: white; color:#003638; padding: 20px 30px;">
-            For Educational Institutions
-          </span>
-          <span class="text-center" style="width: 22vw;font-size: small; margin-bottom: 20px; background-color: white; color: #003638; padding: 4px 30px;">
-            For Educational Institutions
-          </span>
-        </div>
-        <div class="flex flex-col justify-center items-center">
-          <img src="/images/section 4/Sec 4_ Image 3.png" style="width: 16vw; height: 25vh; margin-bottom: 20px;" alt="">
-          <span class="text-center" style="width: 22vw;font-size: small;border-bottom: 1px solid #000; margin-bottom: 20px; background-color: #003638; color:white; padding: 4px 30px;">
-            For Educational Institutions
-          </span>
-          <span class="text-center" style="width: 22vw;font-size: small;border-bottom: 3px solid rgb(189, 189, 189); margin-bottom: 20px; background-color: white; color:#003638; padding: 20px 30px;">
-            For Educational Institutions
-          </span>
-          <span class="text-center" style="width: 22vw;font-size: small; margin-bottom: 20px; background-color: white; color: #003638; padding: 4px 30px;">
-            For Educational Institutions
-          </span>
-        </div>
-        <div class="flex flex-col justify-center items-center">
-          <img src="/images/section 4/Sec 4_ Image 4.png" style="width: 16vw; height: 25vh; margin-bottom: 20px;" alt="">
-          <span class="text-center" style="width: 22vw;font-size: small;border-bottom: 1px solid #000; margin-bottom: 20px; background-color: #003638; color:white; padding: 4px 30px;">
-            For Educational Institutions
-          </span>
-          <span class="text-center" style="width: 22vw;font-size: small;border-bottom: 3px solid rgb(189, 189, 189); margin-bottom: 20px; background-color: white; color:#003638; padding: 20px 30px;">
-            For Educational Institutions
-          </span>
-          <span class="text-center" style="width: 22vw;font-size: small; margin-bottom: 20px; background-color: white; color: #003638; padding: 4px 30px;">
-            For Educational Institutions
-          </span>
-        </div>
+    <div class="flex flex-row justify-center items-center gap-1">
+      <div class="flex flex-col justify-center items-center">
+        <img
+          src="/images/section 4/Sec 4_ Image 1.png"
+          style="width: 16vw; height: 25vh; margin-bottom: 20px"
+          alt=""
+        />
+        <span
+          class="text-center"
+          style="
+            width: 22vw;
+            font-size: small;
+            border-bottom: 1px solid #000;
+            margin-bottom: 20px;
+            background-color: #003638;
+            color: white;
+            padding: 4px 30px;
+          "
+        >
+          For Educational Institutions
+        </span>
+        <span
+          class="text-center"
+          style="
+            width: 22vw;
+            font-size: small;
+            border-bottom: 3px solid rgb(189, 189, 189);
+            margin-bottom: 20px;
+            background-color: white;
+            color: #003638;
+            padding: 20px 30px;
+          "
+        >
+          For Educational Institutions
+        </span>
+        <span
+          class="text-center"
+          style="
+            width: 22vw;
+            font-size: small;
+            margin-bottom: 20px;
+            background-color: white;
+            color: #003638;
+            padding: 4px 30px;
+          "
+        >
+          For Educational Institutions
+        </span>
       </div>
-      
-      <!-- Section 5-->
-      <div class="section5">
-          <div class="counter-banner">
-            <img src="images\Section 5\Counter banner.png" alt="Counter Banner">
-        
-            <div class="counter-block educators">
-              <h3>Educators empowered</h3>
-              <p>50,000+</p>
-            </div>
-        
-            <div class="counter-block students">
-              <h3>Students’ <br> learning enriched</h3>
-              <p>100,000+</p>
-            </div>
-        
-            <div class="counter-block labs">
-              <h3>Labs designed & installed</h3>
-              <p>500+</p>
-            </div>
-        
-            <div class="counter-block countries">
-              <h3>Countries reached</h3>
-              <p>06</p>
-            </div>
-        
-            <div class="counter-block accredited">
-              <h3>Accredited</h3>
-              <p>STEM.org</p>
-            </div>
-
-            <div class="vertical-line line1"></div>
-            <div class="vertical-line line2"></div>
-            <div class="vertical-line line3"></div>
-
-          </div>
+      <div class="flex flex-col justify-center items-center">
+        <img
+          src="/images/section 4/Sec 4_ Image 2.png"
+          style="width: 16vw; height: 25vh; margin-bottom: 20px"
+          alt=""
+        />
+        <span
+          class="text-center"
+          style="
+            width: 22vw;
+            font-size: small;
+            border-bottom: 1px solid #000;
+            margin-bottom: 20px;
+            background-color: #003638;
+            color: white;
+            padding: 4px 30px;
+          "
+        >
+          For Educational Institutions
+        </span>
+        <span
+          class="text-center"
+          style="
+            width: 22vw;
+            font-size: small;
+            border-bottom: 3px solid rgb(189, 189, 189);
+            margin-bottom: 20px;
+            background-color: white;
+            color: #003638;
+            padding: 20px 30px;
+          "
+        >
+          For Educational Institutions
+        </span>
+        <span
+          class="text-center"
+          style="
+            width: 22vw;
+            font-size: small;
+            margin-bottom: 20px;
+            background-color: white;
+            color: #003638;
+            padding: 4px 30px;
+          "
+        >
+          For Educational Institutions
+        </span>
       </div>
-        
+      <div class="flex flex-col justify-center items-center">
+        <img
+          src="/images/section 4/Sec 4_ Image 3.png"
+          style="width: 16vw; height: 25vh; margin-bottom: 20px"
+          alt=""
+        />
+        <span
+          class="text-center"
+          style="
+            width: 22vw;
+            font-size: small;
+            border-bottom: 1px solid #000;
+            margin-bottom: 20px;
+            background-color: #003638;
+            color: white;
+            padding: 4px 30px;
+          "
+        >
+          For Educational Institutions
+        </span>
+        <span
+          class="text-center"
+          style="
+            width: 22vw;
+            font-size: small;
+            border-bottom: 3px solid rgb(189, 189, 189);
+            margin-bottom: 20px;
+            background-color: white;
+            color: #003638;
+            padding: 20px 30px;
+          "
+        >
+          For Educational Institutions
+        </span>
+        <span
+          class="text-center"
+          style="
+            width: 22vw;
+            font-size: small;
+            margin-bottom: 20px;
+            background-color: white;
+            color: #003638;
+            padding: 4px 30px;
+          "
+        >
+          For Educational Institutions
+        </span>
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        <img
+          src="/images/section 4/Sec 4_ Image 4.png"
+          style="width: 16vw; height: 25vh; margin-bottom: 20px"
+          alt=""
+        />
+        <span
+          class="text-center"
+          style="
+            width: 22vw;
+            font-size: small;
+            border-bottom: 1px solid #000;
+            margin-bottom: 20px;
+            background-color: #003638;
+            color: white;
+            padding: 4px 30px;
+          "
+        >
+          For Educational Institutions
+        </span>
+        <span
+          class="text-center"
+          style="
+            width: 22vw;
+            font-size: small;
+            border-bottom: 3px solid rgb(189, 189, 189);
+            margin-bottom: 20px;
+            background-color: white;
+            color: #003638;
+            padding: 20px 30px;
+          "
+        >
+          For Educational Institutions
+        </span>
+        <span
+          class="text-center"
+          style="
+            width: 22vw;
+            font-size: small;
+            margin-bottom: 20px;
+            background-color: white;
+            color: #003638;
+            padding: 4px 30px;
+          "
+        >
+          For Educational Institutions
+        </span>
+      </div>
+    </div>
+
+    <!-- Section 5-->
+    <div class="section5">
+      <div class="counter-banner">
+        <img src="images\Section 5\Counter banner.png" alt="Counter Banner" />
+
+        <div class="counter-block educators">
+          <h3>Educators empowered</h3>
+          <p>50,000+</p>
+        </div>
+
+        <div class="counter-block students">
+          <h3>
+            Students’ <br />
+            learning enriched
+          </h3>
+          <p>100,000+</p>
+        </div>
+
+        <div class="counter-block labs">
+          <h3>Labs designed & installed</h3>
+          <p>500+</p>
+        </div>
+
+        <div class="counter-block countries">
+          <h3>Countries reached</h3>
+          <p>06</p>
+        </div>
+
+        <div class="counter-block accredited">
+          <h3>Accredited</h3>
+          <p>STEM.org</p>
+        </div>
+
+        <div class="vertical-line line1"></div>
+        <div class="vertical-line line2"></div>
+        <div class="vertical-line line3"></div>
+      </div>
+    </div>
+
     <!-- Section 6 -->
     <div class="section6">
       <div class="LearningJourneybackground">
-        <img src="images/Section 6/Learning Journey background.png" alt="Background" >
+        <img
+          src="images/Section 6/Learning Journey background.png"
+          alt="Background"
+        />
       </div>
-      
+
       <div class="LearningJourneyContent">
-        <img src="images\Section 6\Learning journey.png" alt="Overlay Image" style="position: absolute; width: 90vw;">
+        <img
+          src="images\Section 6\Learning journey.png"
+          alt="Overlay Image"
+          style="position: absolute; width: 90vw"
+        />
         <div class="LearningText">
           <h2>Your Complete Learning Partner</h2>
         </div>
         <div class="overlay-text step1">
           <h3>Planning & Design</h3>
-          <p>Collaborate to understand your institution’s unique goals and lay the foundation for a customized learning space.</p>
+          <p>
+            Collaborate to understand your institution’s unique goals and lay
+            the foundation for a customized learning space.
+          </p>
         </div>
-    
+
         <div class="overlay-text step2">
           <h3>Lab Setup & Installation</h3>
-          <p>Oversee complete setup—furniture, equipment & software—for seamless integration.</p>
+          <p>
+            Oversee complete setup—furniture, equipment & software—for seamless
+            integration.
+          </p>
         </div>
-    
+
         <div class="overlay-text step3">
           <h3>Resource Selection</h3>
-          <p>Curate curriculum-aligned tools, materials, and software tailored to your objectives.</p>
+          <p>
+            Curate curriculum-aligned tools, materials, and software tailored to
+            your objectives.
+          </p>
         </div>
-    
+
         <div class="overlay-text step4">
           <h3>Educational Consultation</h3>
-          <p>Get expert guidance on teaching strategies and best practices to enhance learning experiences.</p>
+          <p>
+            Get expert guidance on teaching strategies and best practices to
+            enhance learning experiences.
+          </p>
         </div>
-    
+
         <div class="overlay-text step5">
           <h3>Teacher Training</h3>
-          <p>Equip educators with skills and knowledge through hands-on training for better instruction.</p>
+          <p>
+            Equip educators with skills and knowledge through hands-on training
+            for better instruction.
+          </p>
         </div>
-    
+
         <div class="overlay-text step6">
           <h3>Customer Support</h3>
-          <p>Dedicated support team for technical help, updates, and assistance—whenever needed.</p>
+          <p>
+            Dedicated support team for technical help, updates, and
+            assistance—whenever needed.
+          </p>
         </div>
-    
+
         <div class="overlay-text step7">
           <h3>Maintenance</h3>
-          <p>Ensure long-term performance through regular maintenance of infrastructure and software.</p>
+          <p>
+            Ensure long-term performance through regular maintenance of
+            infrastructure and software.
+          </p>
         </div>
       </div>
     </div>
-    
+
     <!-- Section 7 -->
     <div class="section7">
       <div class="inspire-section">
         <h2 class="inspire-heading">Learning Spaces to Inspire</h2>
         <p class="inspire-paragraph">
-          ATLAB transforms classrooms into immersive hubs of exploration—
-          where students collaborate, create, and build real-world skills through
+          ATLAB transforms classrooms into immersive hubs of exploration— where
+          students collaborate, create, and build real-world skills through
           hands-on, future-ready experiences.
         </p>
       </div>
-      
+
       <div class="grid-container">
         <div class="grid-item item-1">
-            <img src="images/Section 7/Sec 7 _ Image 1.png" alt="Students working with robotics">
+          <img
+            src="images/Section 7/Sec 7 _ Image 1.png"
+            alt="Students working with robotics"
+          />
         </div>
-    
+
         <div class="grid-item item-2">
-            <div class="sub-item">
-                <img src="images/Section 7/Sec 7 _ Image 2.png" alt="Image 2">
-            </div>
-            <div class="sub-item">
-                <img src="images/Section 7/Sec 7 _ Image 3.png" alt="Image 3">
-            </div>
+          <div class="sub-item">
+            <img src="images/Section 7/Sec 7 _ Image 2.png" alt="Image 2" />
+          </div>
+          <div class="sub-item">
+            <img src="images/Section 7/Sec 7 _ Image 3.png" alt="Image 3" />
+          </div>
         </div>
-    
+
         <div class="grid-item item-4">
-            <img src="images/Section 7/Sec 7 _ Image 4.png" alt="Robotics equipment">
+          <img
+            src="images/Section 7/Sec 7 _ Image 4.png"
+            alt="Robotics equipment"
+          />
         </div>
-    
+
         <div class="grid-item item-5">
-            <img src="images/Section 7/Sec 7 _ Image 5.png" alt="Programming workspace">
+          <img
+            src="images/Section 7/Sec 7 _ Image 5.png"
+            alt="Programming workspace"
+          />
         </div>
-    
+
         <div class="grid-item item-6">
-            <img src="images/Section 7/Sec 7 _ Image 6.png" alt="Science lab">
+          <img src="images/Section 7/Sec 7 _ Image 6.png" alt="Science lab" />
         </div>
       </div>
     </div>
@@ -965,38 +1574,41 @@
       <div class="client-section">
         <h2 class="client-heading">Our Clients</h2>
         <p class="client-paragraph">
-          From schools and universities to government bodies and private institutions,
-           ATLAB is trusted across the education ecosystem to deliver 
-           future-ready Ed-Tech and learning solutions that empower the next generation.
+          From schools and universities to government bodies and private
+          institutions, ATLAB is trusted across the education ecosystem to
+          deliver future-ready Ed-Tech and learning solutions that empower the
+          next generation.
         </p>
-      </div>   
+      </div>
     </div>
 
     <div class="clients-logo-7">
-      <img src="images/Section 7/logo_SS.png" alt="clients-logos">
+      <img src="images/Section 7/logo_SS.png" alt="clients-logos" />
     </div>
 
     <!-- Section 8 -->
     <div class="section8">
-      <img src="images\Section 8\Projects bg.png">
+      <img src="images\Section 8\Projects bg.png" />
       <div class="ProjectHeadingText">
         <h2>See Our Projects In Action</h2>
       </div>
 
       <div class="lab-section">
         <div class="lab-card">
-          <img src="images\Section 8\Sec 8_ Image 1 .png" alt="Lab 1">
+          <img src="images\Section 8\Sec 8_ Image 1 .png" alt="Lab 1" />
           <h3>Future Innovators DT Lab, ABC International School</h3>
           <a href="#" class="lab-button">Know More</a>
         </div>
         <div class="lab-card">
-          <img src="images\Section 8\Sec 8_ Image 2.png" alt="Lab 2">
+          <img src="images\Section 8\Sec 8_ Image 2.png" alt="Lab 2" />
           <h3>Creative Thinkers Innovation Lab, Green Valley High School</h3>
           <a href="#" class="lab-button">Know More</a>
         </div>
         <div class="lab-card">
-          <img src="images\Section 8\Sec 8_ Image 3.png" alt="Lab 3">
-          <h3>Molecular Biology Science Lab, Nova Science and Tech University</h3>
+          <img src="images\Section 8\Sec 8_ Image 3.png" alt="Lab 3" />
+          <h3>
+            Molecular Biology Science Lab, Nova Science and Tech University
+          </h3>
           <a href="#" class="lab-button">View Event</a>
         </div>
       </div>
@@ -1006,50 +1618,74 @@
     <div class="success-container">
       <h1 class="main-title">Client Success Stories</h1>
       <div class="stories-grid">
-          <div class="story-card">
-              <div class="image-container">
-                  <img src="images\Section 9\photo1.JPG" alt="Teacher with children" class="story-image">
-                  <div class="date-badge">08 Mar</div>
-              </div>
-              <div class="story-content">
-                  <h3 class="story-title">Lorem ipsum dolor sit amet, consectetur</h3>
-                  <p class="story-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</p>
-                  <a href="#" class="read-more-btn">
-                      Read More
-                      <span class="arrow-icon">→</span>
-                  </a>
-              </div>
+        <div class="story-card">
+          <div class="image-container">
+            <img
+              src="images\Section 9\photo1.JPG"
+              alt="Teacher with children"
+              class="story-image"
+            />
+            <div class="date-badge">08 Mar</div>
           </div>
+          <div class="story-content">
+            <h3 class="story-title">Lorem ipsum dolor sit amet, consectetur</h3>
+            <p class="story-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+              ipsum suspendisse
+            </p>
+            <a href="#" class="read-more-btn">
+              Read More
+              <span class="arrow-icon">→</span>
+            </a>
+          </div>
+        </div>
 
-          <div class="story-card">
-              <div class="image-container">
-                  <img src="images\Section 9\photo2.JPG" alt="Mother and child learning" class="story-image">
-                  <div class="date-badge">08 Mar</div>
-              </div>
-              <div class="story-content">
-                  <h3 class="story-title">Lorem ipsum dolor sit amet, consectetur</h3>
-                  <p class="story-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus</p>
-                  <a href="#" class="read-more-btn">
-                      Read More
-                      <span class="arrow-icon">→</span>
-                  </a>
-              </div>
+        <div class="story-card">
+          <div class="image-container">
+            <img
+              src="images\Section 9\photo2.JPG"
+              alt="Mother and child learning"
+              class="story-image"
+            />
+            <div class="date-badge">08 Mar</div>
           </div>
+          <div class="story-content">
+            <h3 class="story-title">Lorem ipsum dolor sit amet, consectetur</h3>
+            <p class="story-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+              ipsum suspendisse ultrices gravida. Risus
+            </p>
+            <a href="#" class="read-more-btn">
+              Read More
+              <span class="arrow-icon">→</span>
+            </a>
+          </div>
+        </div>
 
-          <div class="story-card">
-              <div class="image-container">
-                  <img src="images\Section 9\photo3.JPG" alt="Children playing outdoors" class="story-image">
-                  <div class="date-badge">08 Mar</div>
-              </div>
-              <div class="story-content">
-                  <h3 class="story-title">Lorem ipsum dolor sit amet, consectetur</h3>
-                  <p class="story-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus</p>
-                  <a href="#" class="read-more-btn">
-                      Read More
-                      <span class="arrow-icon">→</span>
-                  </a>
-              </div>
+        <div class="story-card">
+          <div class="image-container">
+            <img
+              src="images\Section 9\photo3.JPG"
+              alt="Children playing outdoors"
+              class="story-image"
+            />
+            <div class="date-badge">08 Mar</div>
           </div>
+          <div class="story-content">
+            <h3 class="story-title">Lorem ipsum dolor sit amet, consectetur</h3>
+            <p class="story-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+              ipsum suspendisse ultrices gravida. Risus
+            </p>
+            <a href="#" class="read-more-btn">
+              Read More
+              <span class="arrow-icon">→</span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -1057,174 +1693,220 @@
     <div class="presence-section">
       <h2>Our Presence</h2>
       <div class="presence-content">
-          <div class="presence-map">
-              <img src="images\Section 9\Map.png" alt="World Map showing our presence">
+        <div class="presence-map">
+          <img
+            src="images\Section 9\Map.png"
+            alt="World Map showing our presence"
+          />
+        </div>
+
+        <div class="presence-details">
+          <div class="country-details">
+            <h3>UAE</h3>
+            <span class="company-name">Atlab Trading L.L.C.</span>
+            <div class="contact-info">
+              <p>Ahmad Mustafa Hassan Alali Compound,</p>
+              <p>Office #19, Qusais #2,</p>
+              <p>P.O. Box 122399, Dubai, UAE</p>
+              <p>T: +971 4 3800006</p>
+              <a href="mailto:enquiry.atlab@centena.com"
+                >E: enquiry.atlab@centena.com</a
+              >
+              <a href="http://www.atlabme.com" target="_blank"
+                >W: www.atlabme.com</a
+              >
+            </div>
           </div>
-          
-          <div class="presence-details">
-              <div class="country-details">
-                  <h3>UAE</h3>
-                  <span class="company-name">Atlab Trading L.L.C.</span>
-                  <div class="contact-info">
-                      <p>Ahmad Mustafa Hassan Alali Compound,</p>
-                      <p>Office #19, Qusais #2,</p>
-                      <p>P.O. Box 122399, Dubai, UAE</p>
-                      <p>T: +971 4 3800006</p>
-                      <a href="mailto:enquiry.atlab@centena.com">E: enquiry.atlab@centena.com</a>
-                      <a href="http://www.atlabme.com" target="_blank">W: www.atlabme.com</a>
-                  </div>
-              </div>
-              
-              <div class="country-details">
-                  <h3>Oman</h3>
-                  <span class="company-name">Atlab</span>
-                  <div class="contact-info">
-                      <p>P.O. Box 1858, Flat No.24, Building No.234,</p>
-                      <p>Al Hail South, Muscat, Sultanate of Oman</p>
-                      <p>T: +968 2454 3677</p>
-                      <p>F: +968 2454 3625</p>
-                      <a href="mailto:enquiry.atlab@centena.com">E: enquiry.atlab@centena.com</a>
-                  </div>
-              </div>
-              
-              <div class="country-details">
-                  <h3>Kuwait</h3>
-                  <span class="company-name">Centena Scientific Devices W.L.L.</span>
-                  <div class="contact-info">
-                      <p>P.O. Box 3936, SAFAT 13040,</p>
-                      <p>Kuwait, Office #202</p>
-                      <p>Block 9, Building 11, Floor 2, Al-Hillali Street,</p>
-                      <p>Al Qiblatain, Kuwait</p>
-                      <p>T: +965 22418797</p>
-                      <p>F: +965 22418798</p>
-                      <a href="mailto:enquiry.atlab@centena.com">E: enquiry.atlab@centena.com</a>
-                  </div>
-              </div>
-              
-              <div class="country-details">
-                  <h3>Saudi Arabia - Riyadh</h3>
-                  <span class="company-name">Horizon Informatics Trading Co.</span>
-                  <div class="contact-info">
-                      <p>Al Aqaria Al Sitin Building, Bld#6567,</p>
-                      <p>Tower 1, 1st Floor,</p>
-                      <p>Office #2702, Salahuddin Al Ayoubi Road,</p>
-                      <p>Al Malqa District,</p>
-                      <p>Riyadh – 13812, Kingdom of Saudi Arabia</p>
-                      <p>T: +966 11 4450504</p>
-                      <p>F: +966 11 4450504</p>
-                      <a href="mailto:enquiry.atlab@centena.com">E: enquiry.atlab@centena.com</a>
-                  </div>
-              </div>
-              
-              <div class="country-details">
-                  <h3>Qatar</h3>
-                  <span class="company-name">Petro Emphor Co. W.L.L.</span>
-                  <div class="contact-info">
-                      <p>P.O. Box 31822 C101, Block-24,</p>
-                      <p>Salwa Building, Barwa Commercial</p>
-                      <p>Avenue,</p>
-                      <p>Al Sadd, Doha, Qatar</p>
-                      <p>T: +974 44172535 / 44150341 / 44881975</p>
-                      <p>F: +974 44174214</p>
-                      <a href="mailto:enquiry.atlab@centena.com">E: enquiry.atlab@centena.com</a>
-                      <a href="http://petroemphor.com" target="_blank">W: petroemphor.com</a>
-                  </div>
-              </div>
+
+          <div class="country-details">
+            <h3>Oman</h3>
+            <span class="company-name">Atlab</span>
+            <div class="contact-info">
+              <p>P.O. Box 1858, Flat No.24, Building No.234,</p>
+              <p>Al Hail South, Muscat, Sultanate of Oman</p>
+              <p>T: +968 2454 3677</p>
+              <p>F: +968 2454 3625</p>
+              <a href="mailto:enquiry.atlab@centena.com"
+                >E: enquiry.atlab@centena.com</a
+              >
+            </div>
           </div>
+
+          <div class="country-details">
+            <h3>Kuwait</h3>
+            <span class="company-name">Centena Scientific Devices W.L.L.</span>
+            <div class="contact-info">
+              <p>P.O. Box 3936, SAFAT 13040,</p>
+              <p>Kuwait, Office #202</p>
+              <p>Block 9, Building 11, Floor 2, Al-Hillali Street,</p>
+              <p>Al Qiblatain, Kuwait</p>
+              <p>T: +965 22418797</p>
+              <p>F: +965 22418798</p>
+              <a href="mailto:enquiry.atlab@centena.com"
+                >E: enquiry.atlab@centena.com</a
+              >
+            </div>
+          </div>
+
+          <div class="country-details">
+            <h3>Saudi Arabia - Riyadh</h3>
+            <span class="company-name">Horizon Informatics Trading Co.</span>
+            <div class="contact-info">
+              <p>Al Aqaria Al Sitin Building, Bld#6567,</p>
+              <p>Tower 1, 1st Floor,</p>
+              <p>Office #2702, Salahuddin Al Ayoubi Road,</p>
+              <p>Al Malqa District,</p>
+              <p>Riyadh – 13812, Kingdom of Saudi Arabia</p>
+              <p>T: +966 11 4450504</p>
+              <p>F: +966 11 4450504</p>
+              <a href="mailto:enquiry.atlab@centena.com"
+                >E: enquiry.atlab@centena.com</a
+              >
+            </div>
+          </div>
+
+          <div class="country-details">
+            <h3>Qatar</h3>
+            <span class="company-name">Petro Emphor Co. W.L.L.</span>
+            <div class="contact-info">
+              <p>P.O. Box 31822 C101, Block-24,</p>
+              <p>Salwa Building, Barwa Commercial</p>
+              <p>Avenue,</p>
+              <p>Al Sadd, Doha, Qatar</p>
+              <p>T: +974 44172535 / 44150341 / 44881975</p>
+              <p>F: +974 44174214</p>
+              <a href="mailto:enquiry.atlab@centena.com"
+                >E: enquiry.atlab@centena.com</a
+              >
+              <a href="http://petroemphor.com" target="_blank"
+                >W: petroemphor.com</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- Footer -->
     <footer class="site-footer">
-      <img src="images\Footer\Footer.png" style="width: 100%; height: 620px;">
+      <img src="images\Footer\Footer.png" style="width: 100%; height: 620px" />
       <div class="footer-grid">
-          <div class="footer-col about-us">
-              <img src="images\SECTION 1\Atlab logo.png" alt="ATLAB Logo" class="footer-logo">
-              <p>ATLAB transforms learning with<br> innovative solutions for K-12 and<br> higher education.
-                  Integrating<br>
-                  STEM, robotics, AI, and immersive<br> technologies.</p>
-          </div>
-          <div class="footer-col get-in-touch">
-              <h3>Get In Touch</h3>
-              <p style="margin-left: -40px; font-size: 13px; ">Atlab Trading LLC</p>
-              <p style="margin-left: -40px; margin-top: -19px; font-size: 13px; margin-top: 2px; ">Ahmad Mustafa Hasan Ahl
-                  Compound,<br>Office No 19 Al Qusais Industrial,<br>Dubai, United Arab
-                  Emirates.</p>
-              <p style="margin-left: -40px; font-size: 13px; margin-top: 20px;">+971 4 3880008</p>
-              <p style="margin-left: -40px; font-size: 13px; margin-top: 20px; " ><a
-                      href="mailto:enquiry.atlab@centena.com">enquiry.atlab@centena.com</a></p>
-          </div>
-          <div class="footer-col our-solutions" style="margin-left: -40px;">
-              <h3>Our Solutions</h3>
-              <ul style="margin-left: -40px; line-height: 1.0; font-size: 13px;">
-                  <li><a href="#">&#9632; K-12 Education</a></li>
-                  <li><a href="#">&#9632; Higher Education</a></li>
-                  <li><a href="#">&#9632; Biomedical Solutions</a></li>
-              </ul>
-          </div>
-          <div class="footer-col useful-links" style="margin-left: -70px;">
-              <h3>Useful Links</h3>
-              <ul style="margin-left: -40px; line-height: 1.0; font-size: 13px;">
-                  <li><a href="#">&#9632; Home</a></li>
-                  <li><a href="#">&#9632; About</a></li>
-                  <li><a href="#">&#9632; Group Companies</a></li>
-                  <li><a href="#">&#9632; Blogs</a></li>
-                  <li><a href="#">&#9632; Privacy Policy</a></li>
-                  <li><a href="#">&#9632; Terms & Conditions</a></li>
-                  <li><a href="#">&#9632; Sitemap</a></li>
-                  <li><a href="#">&#9632; Careers</a></li>
-              </ul>
-          </div>
-          <div class="footer-col group-companies" style="margin-left: -110px;">
-              <h3>Group Companies</h3>
-              <ul style="margin-left: -40px; line-height: 1.0; font-size: 13px;">
-                  <li><a href="#">&#9632; Marine</a></li>
-                  <li><a href="#">&#9632; Analytical</a></li>
-                  <li><a href="#">&#9632; Industrial</a></li>
-                  <li><a href="#">&#9632; Security</a></li>
-                  <li><a href="#">&#9632; LabSpace</a></li>
-              </ul>
-          </div>
+        <div class="footer-col about-us">
+          <img
+            src="images\SECTION 1\Atlab logo.png"
+            alt="ATLAB Logo"
+            class="footer-logo"
+          />
+          <p>
+            ATLAB transforms learning with<br />
+            innovative solutions for K-12 and<br />
+            higher education. Integrating<br />
+            STEM, robotics, AI, and immersive<br />
+            technologies.
+          </p>
+        </div>
+        <div class="footer-col get-in-touch">
+          <h3>Get In Touch</h3>
+          <p style="margin-left: -40px; font-size: 13px">Atlab Trading LLC</p>
+          <p
+            style="
+              margin-left: -40px;
+              margin-top: -19px;
+              font-size: 13px;
+              margin-top: 2px;
+            "
+          >
+            Ahmad Mustafa Hasan Ahl Compound,<br />Office No 19 Al Qusais
+            Industrial,<br />Dubai, United Arab Emirates.
+          </p>
+          <p style="margin-left: -40px; font-size: 13px; margin-top: 20px">
+            +971 4 3880008
+          </p>
+          <p style="margin-left: -40px; font-size: 13px; margin-top: 20px">
+            <a href="mailto:enquiry.atlab@centena.com"
+              >enquiry.atlab@centena.com</a
+            >
+          </p>
+        </div>
+        <div class="footer-col our-solutions" style="margin-left: -40px">
+          <h3>Our Solutions</h3>
+          <ul style="margin-left: -40px; line-height: 1; font-size: 13px">
+            <li><a href="#">&#9632; K-12 Education</a></li>
+            <li><a href="#">&#9632; Higher Education</a></li>
+            <li><a href="#">&#9632; Biomedical Solutions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col useful-links" style="margin-left: -70px">
+          <h3>Useful Links</h3>
+          <ul style="margin-left: -40px; line-height: 1; font-size: 13px">
+            <li><a href="#">&#9632; Home</a></li>
+            <li><a href="#">&#9632; About</a></li>
+            <li><a href="#">&#9632; Group Companies</a></li>
+            <li><a href="#">&#9632; Blogs</a></li>
+            <li><a href="#">&#9632; Privacy Policy</a></li>
+            <li><a href="#">&#9632; Terms & Conditions</a></li>
+            <li><a href="#">&#9632; Sitemap</a></li>
+            <li><a href="#">&#9632; Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col group-companies" style="margin-left: -110px">
+          <h3>Group Companies</h3>
+          <ul style="margin-left: -40px; line-height: 1; font-size: 13px">
+            <li><a href="#">&#9632; Marine</a></li>
+            <li><a href="#">&#9632; Analytical</a></li>
+            <li><a href="#">&#9632; Industrial</a></li>
+            <li><a href="#">&#9632; Security</a></li>
+            <li><a href="#">&#9632; LabSpace</a></li>
+          </ul>
+        </div>
       </div>
       <div class="footer-bottom">
-          <div class="certifications">
-              <img src="images\Footer\Great Place to work logo.png" alt="Great Place To Work" class="certification-img"
-                  style="width: 90px; margin-top: 10px;">
-                  <div>
-              <img src="images\Footer\Centena logo.png" alt="Centena Group" class="certification-img"
-                  style="width: 150px; margin-left: 15px; margin-bottom: 30px;">
-                  <div class="subscribe-">
-                    <button class="subscribe-btn" style="width: 12vw;">
-                          Subscribe for Latest Updates!
-                        <svg class="plane-icon" viewBox="0 0 24 24">
-                          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
-                        </svg>
-                    </button>
-                  </div>
-                </div>
+        <div class="certifications">
+          <img
+            src="images\Footer\Great Place to work logo.png"
+            alt="Great Place To Work"
+            class="certification-img"
+            style="width: 90px; margin-top: 10px"
+          />
+          <div>
+            <img
+              src="images\Footer\Centena logo.png"
+              alt="Centena Group"
+              class="certification-img"
+              style="width: 150px; margin-left: 15px; margin-bottom: 30px"
+            />
+            <div class="subscribe-">
+              <button class="subscribe-btn" style="width: 12vw">
+                Subscribe for Latest Updates!
+                <svg class="plane-icon" viewBox="0 0 24 24">
+                  <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                </svg>
+              </button>
+            </div>
           </div>
-          
-          <div class="footer-info-row">
-              <div class="certified" style="margin-top: 40px;">
-                  <h4>Certified</h4>
-                  <p>ISO 14001:2015, ISO 45001:2018, ISO 9001:2015</p>
-              </div>
-              <div class="global-presence" style="margin-top: 40px;">
-                  <h4>Global Presence</h4>
-                  <p>UAE | Kuwait | Qatar | Oman | Saudi Arabia</p>
-              </div>
+        </div>
+
+        <div class="footer-info-row">
+          <div class="certified" style="margin-top: 40px">
+            <h4>Certified</h4>
+            <p>ISO 14001:2015, ISO 45001:2018, ISO 9001:2015</p>
           </div>
+          <div class="global-presence" style="margin-top: 40px">
+            <h4>Global Presence</h4>
+            <p>UAE | Kuwait | Qatar | Oman | Saudi Arabia</p>
+          </div>
+        </div>
       </div>
       <div class="footer-credits">
-          <p>Copyright © 2025 ATLAB. ALL Rights Reserved.</p>
-          <img src="images\Footer\SM icon.png" alt="Social Media Icon" class="social-icons"
-              style="margin-top: -14px; width: 100px; margin-right: 140px;">
+        <p>Copyright © 2025 ATLAB. ALL Rights Reserved.</p>
+        <img
+          src="images\Footer\SM icon.png"
+          alt="Social Media Icon"
+          class="social-icons"
+          style="margin-top: -14px; width: 100px; margin-right: 140px"
+        />
       </div>
-  </footer>
-
-    
- 
-
+    </footer>
 
     <script>
       const mobileMenuButton = document.getElementById("mobile-menu-button");
@@ -1257,16 +1939,72 @@
         }
       });
 
-        function showTab(sectionId) {
-    // Hide all content
-    document.querySelectorAll('.context').forEach(c => c.classList.remove('active'));
-    // Remove active class from all tabs
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-    // Show selected content
-    document.getElementById(sectionId).classList.add('active');
-    // Highlight selected tab
-    event.target.classList.add('active');
-  }
+function showTab(sectionId, clickedTab) {
+  // Hide all content
+  document.querySelectorAll('.context').forEach(c => c.classList.remove('active'));
+
+  // Remove active class from all tabs
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+
+  // Show selected content
+  document.getElementById(sectionId).classList.add('active');
+
+  // Highlight selected tab
+  clickedTab.classList.add('active');
+}
+
+
+
+      let currentSlide = 0;
+      const totalSlides = 3;
+      const slidesWrapper = document.querySelector(".slides-wrapper");
+      const dots = document.querySelectorAll(".dot");
+
+      // Function to update active dot
+      function updateActiveDot(index) {
+        dots.forEach((dot) => dot.classList.remove("active"));
+        dots[index].classList.add("active");
+      }
+
+      // Function to go to specific slide
+      function goToSlide(index) {
+        currentSlide = index;
+        const translateValue = -33.333 * index;
+
+        // Pause animation
+        slidesWrapper.style.animation = "none";
+        slidesWrapper.style.transform = `translateX(${translateValue}%)`;
+
+        updateActiveDot(index);
+
+        // Restart animation after a delay
+        setTimeout(() => {
+          slidesWrapper.style.animation = "slideContent 12s infinite";
+          slidesWrapper.style.transform = "";
+        }, 100);
+      }
+
+      // Add click listeners to dots
+      dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+          goToSlide(index);
+        });
+      });
+
+      // Auto-update active dot based on animation
+      function autoUpdateDots() {
+        const animationTime = 1000000 * 3; // 12 seconds total
+        const slideTime = 1000000; // 4 seconds per slide
+
+        setInterval(() => {
+          currentSlide = (currentSlide + 1) % totalSlides;
+          updateActiveDot(currentSlide);
+        }, slideTime);
+      }
+
+      // Initialize
+      updateActiveDot(0);
+      autoUpdateDots();
     </script>
   </body>
 </html>
