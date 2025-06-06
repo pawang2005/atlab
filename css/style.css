@@ -694,3 +694,18 @@ body {
   transition: color 0.3s ease;
 }
 
+.he-cards {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  width: 80%;
+}
+
+.card-content{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
