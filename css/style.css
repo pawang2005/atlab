@@ -1174,6 +1174,7 @@ body {
 .slides-wrapper-a {
   display: flex;
   width: 600%;
+  margin-top: 10px;
   animation: slideContent-a 20s infinite;
   transition: transform 0.2s ease-in-out;
 }
