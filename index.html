@@ -23,7 +23,7 @@
       }
       body {
         font-family: "poppins", sans-serif;
-       
+
         overflow-x: hidden;
       }
 
@@ -75,29 +75,28 @@
         margin-left: 10vw;
         z-index: -10;
       }
-       .tab {
+      .tab {
         display: flex;
         cursor: pointer;
-        
+
         padding: 10px 20px;
         margin-right: 5px;
-        
       }
 
       .tab.active {
         background: #003638;
         font-weight: bold;
-        color:white;
+        color: white;
       }
 
       .context {
-       display: none;
-       border: 1px solid #ccc;
-       border-top: none;
+        display: none;
+        border: 1px solid #ccc;
+        border-top: none;
       }
 
       .context.active {
-      display: block;
+        display: block;
       }
 
       .section4-div h1 {
@@ -427,7 +426,10 @@
 
       <div class="container">
         <!-- K-12 Education Card -->
-        <div class="education-card" style="border-right: 2px solid rgb(203, 203, 203);">
+        <div
+          class="education-card"
+          style="border-right: 2px solid rgb(203, 203, 203)"
+        >
           <div class="card-content">
             <div class="card-header">
               <h2 class="card-title">K-12 Education</h2>
@@ -472,10 +474,16 @@
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       "
     >
-      <div class="text-5xl font-bold mb-4 empowering" style="color: #003638; width: 50%">
+      <div
+        class="text-5xl font-bold mb-4 empowering"
+        style="color: #003638; width: 50%"
+      >
         <h1>Empowering Future Innovators</h1>
       </div>
-      <div class="text-lg text-gray-700 mb-8 mt-5 empowering-desc" style="width: 60%">
+      <div
+        class="text-lg text-gray-700 mb-8 mt-5 empowering-desc"
+        style="width: 60%"
+      >
         <p>
           ATLAB is where technology meets imagination. As a leader in hands-on
           education solutions, we equip students, teachers, and institutions
@@ -486,30 +494,42 @@
       </div>
     </div>
 
-    <div class="text-sm font-bold flex flex-row justify-center items-center gap-8" style="background-color:#eee">
-      <div class="tab active py-2 px-6" onclick="showTab('section1', this)" style="z-index: 9999;
-      position: relative;">K-12 Education</div>
-      <div class="tab py-2 px-6" onclick="showTab('section2', this)">Higher Education</div>
+    <div
+      class="text-sm font-bold flex flex-row justify-center items-center gap-8"
+      style="background-color: #eee"
+    >
+      <div
+        class="tab active py-2 px-6"
+        onclick="showTab('section1', this)"
+        style="z-index: 9999; position: relative"
+      >
+        K-12 Education
+      </div>
+      <div class="tab py-2 px-6" onclick="showTab('section2', this)">
+        Higher Education
+      </div>
     </div>
 
-    <div id="section1" class="context active" >
+    <div id="section1" class="context active">
       <div class="flex flex-row justify-between items-center mt-10 k-12">
         <div class="pl-32 flex flex-col k-12-main" style="width: 70%">
           <div class="flex flex-row k-12-header">
             <div>
-              <span class="text-lg md:text-4xl font-bold mr-8" style="width: 20%"
+              <span
+                class="text-lg md:text-4xl font-bold mr-8"
+                style="width: 20%"
                 >K-12 <br />
                 Education</span
               >
             </div>
             <div class="mt-4">
-              <span class="text-lg md:text-2xl  font-bold"
+              <span class="text-lg md:text-2xl font-bold"
                 >Inspiring Young <br />
                 Minds to Build the Future
               </span>
             </div>
           </div>
-      
+
           <p style="width: 50%; margin-bottom: 50px" class="k-12-desc">
             Engage every student with hands-on K-12 solutions that bring STEM,
             AI, Coding and creativity to life
@@ -522,7 +542,11 @@
             style="width: 12vw"
             alt=""
           />
-          <img src="/images/new/k-12-main-image.png" class="k-12-image-2" alt="">
+          <img
+            src="/images/new/k-12-main-image.png"
+            class="k-12-image-2"
+            alt=""
+          />
         </div>
       </div>
 
@@ -733,7 +757,6 @@
 
     <!-- Section 2 -->
     <div id="section2" class="context">
-    
       <div
         class="flex flex-row justify-between"
         style="
@@ -1099,14 +1122,35 @@
         <h2 class="partners-header">Our Partners</h2>
         <div class="partners-logos-wrapper">
           <img
-            src="images/SECTION 3/partner-logo-top.png"
+            src="images/new/hafele.png"
+            alt="Our Partners Logos"
+            class="partners-logos-image"
+          />
+
+          <img
+            src="images/new/hafele.png"
+            alt="Our Partners Logos"
+            class="partners-logos-image"
+          />
+
+          <img
+            src="images/new/hafele.png"
+            alt="Our Partners Logos"
+            class="partners-logos-image"
+          />
+          <img
+            src="images/new/hafele.png"
             alt="Our Partners Logos"
             class="partners-logos-image"
           />
         </div>
       </div>
     </div>
-    <div class="relative" style="height: 170vh">
+
+    <div class="atlab-trust">
+      <img src="/images/atlab.png" alt="" />
+    </div>
+    <!-- <div class="relative atlab-trust" style="height: 170vh">
       <img
         src="/images/SECTION 3/Circle shape 22.png"
         style="width: 30vw; position: absolute; top: -8vh; left: 9vw"
@@ -1210,7 +1254,70 @@
           </div>
         </div>
       </div>
+    </div> -->
+
+    <div class="relative new-atlab-trust">
+      <img src="/images/atlab-mobile.png" alt="" />
+      <div class="relative atlab-carousel">
+        <div class="carousel-container">
+          <div class="carousel-wrapper">
+            <!-- Slide 1 -->
+            <div class="carousel-slide active slide-1">
+              <div class="icon">
+                <div class="award-icon">
+                  <div class="ribbon"></div>
+                </div>
+              </div>
+              <h2>400+ Years of<br />Expertise. One Vision.</h2>
+              <p>
+                Transform classrooms into dynamic hubs with 400+ man-years of
+                combined expertise
+              </p>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-slide slide-2">
+              <div class="icon">
+                <div class="award-icon">
+                  <div class="ribbon"></div>
+                </div>
+              </div>
+              <h2>Innovation Meets<br />Education Excellence</h2>
+              <p>
+                Pioneering digital learning solutions that reshape how students
+                engage with knowledge
+              </p>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-slide slide-3">
+              <div class="icon">
+                <div class="award-icon">
+                  <div class="ribbon"></div>
+                </div>
+              </div>
+              <h2>Empowering Future<br />Leaders Today</h2>
+              <p>
+                Building tomorrow's innovators through cutting-edge educational
+                technology and proven methodologies
+              </p>
+            </div>
+          </div>
+
+          <!-- Navigation Buttons -->
+          <button class="nav-button prev" onclick="prevSlide()"></button>
+          <button class="nav-button next" onclick="nextSlide()"></button>
+
+          <!-- Dots Indicator -->
+          <div class="dots-container-a">
+            <span class="dot-a active" onclick="currentSlide(1)"></span>
+            <span class="dot-a" onclick="currentSlide(2)"></span>
+            <span class="dot-a" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+      </div>
     </div>
+
 
     <div class="pl-32 power-header">
       <h1 style="" class="text-4xl font-bold mb-10 power-head">
@@ -1222,7 +1329,9 @@
         educational journey.
       </p>
     </div>
-    <div class="flex flex-row justify-center items-center gap-1 power-education">
+    <div
+      class="flex flex-row justify-center items-center gap-1 power-education"
+    >
       <div class="flex flex-col justify-center items-center">
         <img
           src="/images/section 4/Sec 4_ Image 1.png"
@@ -1594,7 +1703,11 @@
     </div>
 
     <div class="clients-logo-7">
-      <img src="images/Section 7/logo_SS.png" alt="clients-logos" />
+      <img src="images/new/hafele.png" alt="clients-logos" />
+      <img src="images/new/hafele.png" alt="clients-logos" />
+
+      <img src="images/new/hafele.png" alt="clients-logos" />
+      <img src="images/new/hafele.png" alt="clients-logos" />
     </div>
 
     <!-- Section 8 -->
@@ -1947,21 +2060,23 @@
         }
       });
 
-function showTab(sectionId, clickedTab) {
-  // Hide all content
-  document.querySelectorAll('.context').forEach(c => c.classList.remove('active'));
+      function showTab(sectionId, clickedTab) {
+        // Hide all content
+        document
+          .querySelectorAll(".context")
+          .forEach((c) => c.classList.remove("active"));
 
-  // Remove active class from all tabs
-  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        // Remove active class from all tabs
+        document
+          .querySelectorAll(".tab")
+          .forEach((t) => t.classList.remove("active"));
 
-  // Show selected content
-  document.getElementById(sectionId).classList.add('active');
+        // Show selected content
+        document.getElementById(sectionId).classList.add("active");
 
-  // Highlight selected tab
-  clickedTab.classList.add('active');
-}
-
-
+        // Highlight selected tab
+        clickedTab.classList.add("active");
+      }
 
       let currentSlide = 0;
       const totalSlides = 3;
@@ -2013,12 +2128,6 @@ function showTab(sectionId, clickedTab) {
       // Initialize
       updateActiveDot(0);
       autoUpdateDots();
-
-      document.querySelectorAll('*').forEach(el => {
-  if (el.scrollHeight > window.innerHeight) {
-    console.log('Tall element:', el, 'Height:', el.scrollHeight);
-  }
-});
     </script>
   </body>
 </html>
