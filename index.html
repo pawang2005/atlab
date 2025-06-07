@@ -23,6 +23,7 @@
       }
       body {
         font-family: "poppins", sans-serif;
+       
         overflow-x: hidden;
       }
 
@@ -381,7 +382,7 @@
       </div>
     </div>
 
-    <div>
+    <div class="circle-section">
       <div>
         <img
           src="/images/SECTION 1/Large Circle shape 1.png"
@@ -487,7 +488,7 @@
 
     <div class="text-sm font-bold flex flex-row justify-center items-center gap-8" style="background-color:#eee">
       <div class="tab active py-2 px-6" onclick="showTab('section1', this)" style="z-index: 9999;
-position: relative;">K-12 Education</div>
+      position: relative;">K-12 Education</div>
       <div class="tab py-2 px-6" onclick="showTab('section2', this)">Higher Education</div>
     </div>
 
@@ -496,13 +497,13 @@ position: relative;">K-12 Education</div>
         <div class="pl-32 flex flex-col k-12-main" style="width: 70%">
           <div class="flex flex-row k-12-header">
             <div>
-              <span class="text-4xl font-bold mr-8" style="width: 20%"
+              <span class="text-lg md:text-4xl font-bold mr-8" style="width: 20%"
                 >K-12 <br />
                 Education</span
               >
             </div>
             <div class="mt-4">
-              <span class="text-2xl font-bold"
+              <span class="text-lg md:text-2xl  font-bold"
                 >Inspiring Young <br />
                 Minds to Build the Future
               </span>
@@ -2012,6 +2013,12 @@ function showTab(sectionId, clickedTab) {
       // Initialize
       updateActiveDot(0);
       autoUpdateDots();
+
+      document.querySelectorAll('*').forEach(el => {
+  if (el.scrollHeight > window.innerHeight) {
+    console.log('Tall element:', el, 'Height:', el.scrollHeight);
+  }
+});
     </script>
   </body>
 </html>
