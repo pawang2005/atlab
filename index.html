@@ -1259,68 +1259,124 @@
     <div class="relative new-atlab-trust">
       <img src="/images/atlab-mobile.png" alt="" />
       <div class="relative atlab-carousel">
-        <div class="carousel-container">
-          <div class="carousel-wrapper">
+        <div class="content-slider" style="position: relative; overflow: hidden; width: 40vw">
+          >
+          <div class="slides-wrapper-a" style="width: 600%">
             <!-- Slide 1 -->
-            <div class="carousel-slide active slide-1">
-              <div class="icon">
-                <div class="award-icon">
-                  <div class="ribbon"></div>
-                </div>
-              </div>
-              <h2>400+ Years of<br />Expertise. One Vision.</h2>
-              <p>
+            <div
+              class="slide-content-a active slide-1 flex justify-center items-center flex-col"
+            >
+              <img src="/images/SECTION 3/Icon 1.png" alt="" />
+              <h1
+                class="text-sm md:text-lg text-white"
+                style="text-align: center"
+              >
+                400+ Years of Expertise. One Vision 1.
+              </h1>
+              <p
+                class="text-xs md:text-sm text-white"
+                style="text-align: center"
+              >
                 Transform classrooms into dynamic hubs with 400+ man-years of
-                combined expertise
+                combined experience.
               </p>
             </div>
 
             <!-- Slide 2 -->
-            <div class="carousel-slide slide-2">
-              <div class="icon">
-                <div class="award-icon">
-                  <div class="ribbon"></div>
-                </div>
-              </div>
-              <h2>Innovation Meets<br />Education Excellence</h2>
-              <p>
-                Pioneering digital learning solutions that reshape how students
-                engage with knowledge
+            <div
+              class="slide-content-a slide-2 flex justify-center items-center flex-col"
+            >
+              <img src="/images/SECTION 3/Icon 2.png" alt="" />
+              <h1
+                class="text-sm md:text-lg text-white"
+                style="text-align: center"
+              >
+                Your Vision, Our Blueprint.
+              </h1>
+              <p
+                class="text-xs md:text-sm text-white"
+                style="text-align: center"
+              >
+                End-to-end lab design integrated with your educational goals.
               </p>
             </div>
 
             <!-- Slide 3 -->
-            <div class="carousel-slide slide-3">
-              <div class="icon">
-                <div class="award-icon">
-                  <div class="ribbon"></div>
-                </div>
-              </div>
-              <h2>Empowering Future<br />Leaders Today</h2>
-              <p>
-                Building tomorrow's innovators through cutting-edge educational
-                technology and proven methodologies
+            <div
+              class="slide-content-a slide-3 flex justify-center items-center flex-col"
+            >
+              <img src="/images/SECTION 3/Icon 3.png" alt="" />
+              <h1
+                class="text-sm md:text-lg text-white"
+                style="text-align: center"
+              >
+                Growth Partners, Not Vendors.
+              </h1>
+              <p
+                class="text-xs md:text-sm text-white"
+                style="text-align: center"
+              >
+                We are here to mentor and co-create labs that amplify curriculum
+              impact and provide real-world skills.
               </p>
             </div>
+
+
+            <div
+            class="slide-content-a slide-1 flex justify-center items-center flex-col"
+          >
+            <img src="/images/SECTION 3/Icon 4.png" alt="" />
+            <h1
+              class="text-sm md:text-lg text-white"
+              style="text-align: center"
+            >
+              Built for Educators by Students.
+            </h1>
+            <p class="text-xs md:text-sm text-white" style="text-align: center">
+              Tools that teach Knowledge through experiments. Versatile teaching
+              resources for every student.
+            </p>
           </div>
 
-          <!-- Navigation Buttons -->
-          <button class="nav-button prev" onclick="prevSlide()"></button>
-          <button class="nav-button next" onclick="nextSlide()"></button>
-
-          <!-- Dots Indicator -->
-          <div class="dots-container-a">
-            <span class="dot-a active" onclick="currentSlide(1)"></span>
-            <span class="dot-a" onclick="currentSlide(2)"></span>
-            <span class="dot-a" onclick="currentSlide(3)"></span>
+          <div
+            class="slide-content-a slide-1 flex justify-center items-center flex-col"
+          >
+            <img src="/images/SECTION 3/Icon 5.png" alt="" />
+            <h1
+              class="text-sm md:text-lg text-white"
+              style="text-align: center"
+            >
+              Precision Meets Practicality.
+            </h1>
+            <p class="text-xs md:text-sm text-white" style="text-align: center">
+             With Certified professionals and high-accuracy setups as per
+              international standards.
+            </p>
           </div>
+
+          <div
+            class="slide-content-a slide-1 flex justify-center items-center flex-col"
+          >
+            <img src="/images/SECTION 3/Icon 6.png" alt="" />
+            <h1
+              class="text-sm md:text-lg text-white"
+              style="text-align: center"
+            >
+              Seamless Support, Always.
+            </h1>
+            <p class="text-xs md:text-sm text-white" style="text-align: center">
+              Our AMC's are maintenance-free with 24/7 monitoring support across
+              all nations.
+            </p>
+          </div>
+          </div>
+          
         </div>
       </div>
     </div>
 
-
     <div class="pl-32 power-header">
-      <h1 style="" class="text-4xl font-bold mb-10 power-head">
+      <h1  class="text-4xl font-bold mb-10 power-head">
         You Power Education. We Power You.
       </h1>
       <p class="text-sm mb-20 power-header-desc">
@@ -2128,6 +2184,61 @@
       // Initialize
       updateActiveDot(0);
       autoUpdateDots();
+
+
+
+      
+
+      let currentSlide_a = 0;
+      const totalSlides_a = 6;
+      const slidesWrapper_a = document.querySelector(".slides-wrapper-a");
+      const dots_a = document.querySelectorAll(".dot-a");
+      const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        // Function to update active dot
+        
+
+        // Function to go to specific slide
+        function goToSlide_a(index) {
+    currentSlide_a = index;
+    const translateValue = -16.666 * index;
+
+    // Pause animation
+    slidesWrapper_a.style.animation = 'none';
+    slidesWrapper_a.style.transform = `translateX(${translateValue}%)`;
+
+    // Restart animation after a delay
+    setTimeout(() => {
+        slidesWrapper_a.style.animation = 'slideContent-a 20s infinite'; // Fixed this line
+        slidesWrapper_a.style.transform = '';
+    }, 100);
+}
+
+        prevBtn.addEventListener('click', () => {
+            currentSlide_a = (currentSlide_a - 1 + totalSlides_a) % totalSlides_a;
+            goToSlide_a(currentSlide_a);
+        });
+
+        // Next button functionality
+        nextBtn.addEventListener('click', () => {
+            currentSlide_a = (currentSlide_a + 1) % totalSlides_a;
+            goToSlide_a(currentSlide_a);
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                prevBtn.click();
+            } else if (e.key === 'ArrowRight') {
+                nextBtn.click();
+            }
+        });
+
+
+
+      
+
+  
     </script>
   </body>
 </html>
