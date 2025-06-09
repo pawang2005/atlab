@@ -3,6 +3,14 @@
   width: auto;
 }
 
+.header-li{
+  font-size: 12px;
+}
+
+.power-education-head{
+  margin-bottom: 0px !important;
+  height: 25px;
+}
 @font-face {
   font-family: "poppins";
   src: url("/images/Fonts/Poppins-Light.ttf") format("truetype");
@@ -49,7 +57,8 @@ body {
 .he-card-container {
   display: grid;
   grid-template-columns: repeat(4, calc(30% - 85px));
-  margin-left: 120px;
+  /* margin-left: 120px; */
+  justify-content: center;
   margin-top: -20vh;
   text-align: center;
 }
@@ -143,7 +152,7 @@ body {
   }
 
   .flex.flex-row.justify-between > div:last-child img:last-child {
-    height: 15vh !important;
+    height: 100px !important;
     width: 30vw;
   }
 
@@ -151,7 +160,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 5vh;
+    margin-top: 0;
     gap: 15px;
   }
 
@@ -1335,7 +1344,7 @@ body {
 .slide-content {
   width: 33.333%;
   flex-shrink: 0;
-  padding: 40px;
+  padding: 20px;
 }
 
 .slide-content-a {
@@ -1412,7 +1421,7 @@ body {
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 900;
   color: #333;
   line-height: 1.2;
@@ -1421,7 +1430,8 @@ body {
 
 .description {
   color: #666;
-  line-height: 1.6;
+  line-height: 1.5;
+  font-size: 1rem;
   margin-bottom: 20px;
 }
 
@@ -1456,7 +1466,7 @@ body {
   color: black;
   font-weight: bold;
   font-size: 14px;
-  padding: 8px 40px;
+  padding: 4px 20px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -1539,6 +1549,7 @@ body {
 
 .container {
   max-width: 1200px;
+  width:80vw;
   position: relative;
   bottom: 8vh;
   margin: 0 auto;
@@ -1546,12 +1557,20 @@ body {
   align-items: stretch;
   background: white;
   padding: 40px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 25px 24px rgba(0, 0, 0, 0.2);
   padding: 40px;
   border-radius: 20px;
   gap: 40px;
 }
 
+.k-12-card-inner-div{
+  min-height: 240px !important;
+}
+
+.k-12-card-outer-div{
+  box-shadow: 0 25px 24px rgba(0, 0, 0, 0.2);
+
+}
 .education-card {
   width: 25vw;
   display: flex;
@@ -1692,6 +1711,12 @@ body {
   .k-12-desc {
     font-size: 13px;
   }
+  .k-12-card-inner-div{
+    min-height: 350px !important;
+  }
+  .k-12-card-inner-div img{
+    width: 11vw !important;
+  }
 
   .k-12-man-image img {
     height: 25vh !important;
@@ -1756,7 +1781,7 @@ body {
     top: -35vh;
   }
   .circle-section {
-    height: 42vh;
+    height: 48vh;
   }
 
   .title {
@@ -1844,7 +1869,7 @@ body {
 
   .k-12 {
     width: 100% !important;
-    padding: 20px 40px;
+    padding: 10px 10px;
     flex-direction: row !important;
   }
   .k-12-main {
@@ -3256,7 +3281,7 @@ body {
   }
   .circle-shape-2 {
     height: 8vh !important;
-    left: 5vw !important  ;
+    left: 1vw !important  ;
     top: -40vh !important;
     z-index: 12;
   }
@@ -3272,6 +3297,7 @@ body {
   }
   .card-title {
     font-size: 20px !important;
+    padding: 4px;
   }
 
   .container {
@@ -3291,10 +3317,12 @@ body {
 }
 
 .power-education-span{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   height: 130px !important;
 }
 }
-
 
 
 .power-education-head{
@@ -3307,5 +3335,6 @@ body {
 }
 
 .power-education-span{
-  height: 100px;
+  height: 130px;
+  width: 21vw !important;
 }
