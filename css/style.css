@@ -1359,8 +1359,8 @@ body {
   border-radius: 50px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   position: absolute;
-  right: 10vw;
-  top: -60vh;
+  right: 9%;
+  top: -50vh;
   display: flex;
   padding: 20px;
   flex-direction: column;
@@ -1370,7 +1370,6 @@ body {
 
 .content-slider {
   position: relative;
-  height: 35vh;
 }
 
 .slides-wrapper {
