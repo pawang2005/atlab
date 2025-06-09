@@ -3277,4 +3277,35 @@ body {
   .container {
     top: -65vh;
   }
+
+  .power-education-head{
+  height: 50px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.power-education-image{
+  height: 120px !important;
+  width: 200px;
+}
+
+.power-education-span{
+  height: 130px !important;
+}
+}
+
+
+
+.power-education-head{
+  height: 25px;
+}
+
+.power-education-image{
+  height: 100px;
+  width: 200px;
+}
+
+.power-education-span{
+  height: 100px;
 }
