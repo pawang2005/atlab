@@ -1739,7 +1739,7 @@
     }
 
 
-   function animateCounter(element, target, duration = 1000, suffix = '') {
+   function animateCounter(element, target, duration = 2000, suffix = '') {
   const start = 0;
   const increment = target / (duration / 16); // ~60fps
   let current = start;
@@ -1757,49 +1757,56 @@
 function isElementInViewport(el) {
   const rect = el.getBoundingClientRect();
   return (
-    rect.top < window.innerHeight && rect.bottom >= 0
+    rect.top < window.innerHeight &&
+    rect.bottom > 0
   );
 }
 
 let lastTriggerTime = 0;
-const throttleDelay = 1000; // 1 second
+const throttleDelay = 1000;
+
+function triggerCounterAnimation() {
+  const counterBlocks = document.querySelectorAll('.counter-block');
+  counterBlocks.forEach((block) => {
+    block.classList.remove('animate');
+    void block.offsetWidth; // force reflow
+    block.classList.add('animate');
+  });
+
+  const counters = document.querySelectorAll('.counter-block p[data-target]');
+  counters.forEach((counter, index) => {
+    const target = parseInt(counter.dataset.target);
+    const suffix = counter.dataset.suffix || '';
+    counter.textContent = '0';
+
+    setTimeout(() => {
+      animateCounter(counter, target, 2000, suffix);
+    }, index * 200);
+  });
+}
 
 function handleScroll() {
   const section = document.querySelector('.section5');
   if (!section) return;
 
-  const isVisible = isElementInViewport(section);
   const now = Date.now();
+  const isVisible = isElementInViewport(section);
 
   if (isVisible && now - lastTriggerTime > throttleDelay) {
     lastTriggerTime = now;
-
-    const counterBlocks = document.querySelectorAll('.counter-block');
-    counterBlocks.forEach((block) => {
-      block.classList.remove('animate');
-      void block.offsetWidth; // reflow for CSS animation reset
-      block.classList.add('animate');
-    });
-
-    const counters = document.querySelectorAll('.counter-block p[data-target]');
-    counters.forEach((counter, index) => {
-      const target = parseInt(counter.dataset.target);
-      const suffix = counter.dataset.suffix || '';
-      counter.textContent = '0'; // reset value
-
-      setTimeout(() => {
-        animateCounter(counter, target, 1000, suffix);
-      }, index * 200);
-    });
+    triggerCounterAnimation();
   }
 }
 
-// Load only after DOM is ready
 document.addEventListener("DOMContentLoaded", function () {
+  // Run immediately in case section is already in view
   handleScroll();
+
+  // Register scroll & resize listeners
   window.addEventListener('scroll', handleScroll, { passive: true });
   window.addEventListener('resize', handleScroll);
 });
+
 
   </script>
 </body>
