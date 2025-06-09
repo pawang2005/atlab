@@ -264,13 +264,18 @@
   </nav>
 
   <div>
-    <img src="/images/SECTION 2/Main Header image.png.jpg" alt="" style="
-          width: 100%;
-          height: 70vh;
-          z-index: -1000;
-          position: relative;
-          object-fit: cover;
-        " class="main-image" />
+    <div class="image-slider-wrapper">
+  <div class="image-slider-track">
+    <img src="/images/SECTION 2/Main Header image.png.jpg" class="slider-image" />
+        <img src="/images/SECTION 2/Main Header image.png.jpg" class="slider-image" />
+
+        <img src="/images/SECTION 2/Main Header image.png.jpg" class="slider-image" />
+
+  </div>
+</div>
+
+
+    
     <div class="main-container">
       <div class="content-card">
         <div class="content-slider">
@@ -1662,56 +1667,55 @@
       clickedTab.classList.add("active");
     }
 
-    let currentSlide = 0;
-    const totalSlides = 3;
-    const slidesWrapper = document.querySelector(".slides-wrapper");
-    const dots = document.querySelectorAll(".dot");
+  let currentSlide = 0;
+const totalSlides = 3;
+const slidesWrapper = document.querySelector(".slides-wrapper");
+const imageSliderTrack = document.querySelector(".image-slider-track");
+const dots = document.querySelectorAll(".dot");
 
-    // Function to update active dot
-    function updateActiveDot(index) {
-      dots.forEach((dot) => dot.classList.remove("active"));
-      dots[index].classList.add("active");
-    }
+function updateActiveDot(index) {
+  dots.forEach(dot => dot.classList.remove("active"));
+  dots[index].classList.add("active");
+}
 
-    // Function to go to specific slide
-    function goToSlide(index) {
-      currentSlide = index;
-      const translateValue = -33.333 * index;
+function goToSlide(index) {
+  currentSlide = index;
+  const translateValue = -33.333 * index;
 
-      // Pause animation
-      slidesWrapper.style.animation = "none";
-      slidesWrapper.style.transform = `translateX(${translateValue}%)`;
+  // Text content slide
+  slidesWrapper.style.animation = "none";
+  slidesWrapper.style.transform = `translateX(${translateValue}%)`;
 
-      updateActiveDot(index);
+  // Image slide
+  imageSliderTrack.style.transform = `translateX(-${100 * index}vw)`;
 
-      // Restart animation after a delay
-      setTimeout(() => {
-        slidesWrapper.style.animation = "slideContent 12s infinite";
-        slidesWrapper.style.transform = "";
-      }, 100);
-    }
+  updateActiveDot(index);
 
-    // Add click listeners to dots
-    dots.forEach((dot, index) => {
-      dot.addEventListener("click", () => {
-        goToSlide(index);
-      });
-    });
+  setTimeout(() => {
+    slidesWrapper.style.animation = "slideContent 12s infinite";
+    slidesWrapper.style.transform = "";
+  }, 100);
+}
 
-    // Auto-update active dot based on animation
-    function autoUpdateDots() {
-      const animationTime = 1000000 * 3; // 12 seconds total
-      const slideTime = 1000000; // 4 seconds per slide
+// Dot click support
+dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    goToSlide(index);
+  });
+});
 
-      setInterval(() => {
-        currentSlide = (currentSlide + 1) % totalSlides;
-        updateActiveDot(currentSlide);
-      }, slideTime);
-    }
+// Auto slide
+function autoUpdateSlides() {
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    goToSlide(currentSlide);
+  }, 4000); // 4s per slide
+}
 
-    // Initialize
-    updateActiveDot(0);
-    autoUpdateDots();
+updateActiveDot(0);
+goToSlide(0);
+autoUpdateSlides();
+
 
     let currentSlide_a = 0;
     const totalSlides_a = 6;
