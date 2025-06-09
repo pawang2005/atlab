@@ -3339,10 +3339,12 @@ body {
 
   .card-description {
     font-size: 10px !important;
+    padding-left: 10px;
   }
   .card-title {
     font-size: 20px !important;
-    padding: 4px;
+    padding-top: 10px;
+    padding-left: 10px;
   }
 
   .container {
