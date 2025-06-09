@@ -2378,7 +2378,7 @@ body {
     top: 4%;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 14px;
+    font-size: 14px !important;
     text-align: left;
     padding: 0.5rem;
     z-index: 3;
