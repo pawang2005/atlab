@@ -1739,7 +1739,7 @@
     }
 
 
-   function animateCounter(element, target, duration = 2000, suffix = '') {
+   function animateCounter(element, target, duration = 1000, suffix = '') {
   const start = 0;
   const increment = target / (duration / 16); // ~60fps
   let current = start;
@@ -1780,7 +1780,7 @@ function triggerCounterAnimation() {
     counter.textContent = '0';
 
     setTimeout(() => {
-      animateCounter(counter, target, 2000, suffix);
+      animateCounter(counter, target, 1000, suffix);
     }, index * 200);
   });
 }
@@ -1800,11 +1800,22 @@ function handleScroll() {
 
 document.addEventListener("DOMContentLoaded", function () {
   // Run immediately in case section is already in view
-  handleScroll();
+
 
   // Register scroll & resize listeners
   window.addEventListener('scroll', handleScroll, { passive: true });
-  window.addEventListener('resize', handleScroll);
+  window.addEventListener('resize', handleScroll, { passive: true });
+  // Throttle scroll events
+  let lastScrollTime = 0;
+  window.addEventListener('scroll', () => {
+    const now = Date.now();
+    if (now - lastScrollTime > 100) { // Throttle to every 100ms
+      handleScroll();
+      lastScrollTime = now;
+    }
+  }, { passive: true });
+  // Trigger on initial load
+  handleScroll();
 });
 
 
