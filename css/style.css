@@ -3328,6 +3328,7 @@ top: -57%;
     font-size: 8px !important;
   }
   .main-container{
+    position: relative;
     height: 0;
   }
   .content-card {
