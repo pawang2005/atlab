@@ -1373,12 +1373,11 @@ body {
   position: absolute;
   right: 9%;
 
-  top: -57%;
+  top: -50%;
 
   display: flex;
   padding: 20px;
   flex-direction: column;
-  gap: 16px;
   overflow: hidden;
 }
 
@@ -1417,7 +1416,7 @@ body {
 .slide-content {
   width: 33.333%;
   flex-shrink: 0;
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
 }
 
 .slide-content-a {
@@ -1506,6 +1505,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 15vw;
+  justify-content: flex-end;
 }
 
 .dots-container {
@@ -1875,7 +1875,7 @@ body {
   }
 
   .slide-content {
-    padding: 10px;
+    padding: 10px 10px 0px 10px;
   }
 
   .large-circle {
@@ -2100,7 +2100,7 @@ body {
 
   .right-circle-2 {
     position: relative !important;
-    top: -55vh !important;
+    top: -51vh !important;
     left: 80vw;
     height: 25vh !important;
   }
@@ -3346,7 +3346,7 @@ body {
 
   .right-circle-2 {
     position: relative !important;
-    top: -60vh !important;
+    top: -56vh !important;
     left: 80vw;
     height: 18vh !important;
   }
