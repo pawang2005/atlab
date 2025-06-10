@@ -1415,7 +1415,6 @@ top: -57%;
 .slides-wrapper {
   display: flex;
   width: 300%;
-  animation: slideContent 12s infinite;
   transition: transform 0.7s ease-in-out;
 }
 
