@@ -66,8 +66,7 @@ body {
 
 .he-card {
   position: relative;
-  width: 360px;
-  height: 400px;
+  width: 25vw;
   justify-self: center;
 }
 
@@ -93,7 +92,7 @@ body {
 }
 
 .he-icon {
-  width: 60px;
+  width: 5vw;
   height: auto;
   margin-bottom: 12px;
 }
@@ -101,7 +100,7 @@ body {
 .he-text {
   font-weight: bold;
   color: white;
-  font-size: 1.25rem;
+  font-size: 1.2vw;
   line-height: 1.4;
 }
 
