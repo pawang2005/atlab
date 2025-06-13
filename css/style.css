@@ -1,10 +1,51 @@
 .logo-img {
-  height: 9vh;
+  height: 7vh;
   width: auto;
 }
 
 .header-li {
+  font-size: 1vw;
+  font-weight: 400;
+}
+
+
+.group:hover .v-arrow {
+  transition: all 0.3s ease-in-out;
+  transform: rotate(180deg);
+}
+
+
+
+.dropdown-menu li {
+  display: flex;
+  align-items: center;
+  height: 40px;
   font-size: 0.9vw;
+  font-weight: 100;
+  color: #333;
+}
+
+
+
+.dropdown-menu li:hover {
+  transition: all 0.5s ease-in-out ;
+  color: #fbc02d  ;
+  transform: translateX(5px);
+}
+.group:hover .group-hover\:flex {
+  transform: translateY(-10px);
+
+  display: flex;
+
+}
+
+.dropdown-menu-mobile {
+  transition: max-height 0.5s ease;
+}
+
+.header-li:hover {
+  color: #fbc02d;
+  transition: color 0.3s ease-in-out;
 }
 
 .translate-scale:hover {
@@ -18,7 +59,7 @@
 }
 @font-face {
   font-family: "poppins";
-  src: url("/images/Fonts/Poppins-Light.ttf") format("truetype");
+  src: url("/images/Fonts/Poppins-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -1362,7 +1403,7 @@ body {
 .main-container {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 50vh
 }
 
 .content-card {
@@ -1373,7 +1414,7 @@ body {
   position: absolute;
   right: 9%;
 
-  top: -50%;
+  top: -100%;
 
   display: flex;
   padding: 20px;
@@ -1591,7 +1632,7 @@ body {
   max-width: 1200px;
   width: 80vw;
   position: relative;
-  bottom: 8vh;
+  bottom: 11vh;
   margin: 0 auto;
   display: flex;
   align-items: stretch;
@@ -1616,7 +1657,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .education-card {
-  width: 25vw;
+  width: 40vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1709,6 +1750,11 @@ body {
     position: relative;
     height: 41vh !important;
     top: -3vh !important;
+  }
+   
+  .main-container{
+    position: relative;
+    height: 0;
   }
 
   .right-circle {
@@ -3299,10 +3345,7 @@ body {
   .footer-credits p {
     font-size: 8px !important;
   }
-  .main-container {
-    position: relative;
-    height: 0;
-  }
+  
   .content-card {
     width: 80vw;
     gap: 0px !important;
