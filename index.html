@@ -134,48 +134,75 @@
       </div>
       <div class="" style="margin-left: 3vw">
         <!-- <img src="/images/SECTION 1/Header sections.png" alt="" /> -->
-        <ul class="hover:text-white flex flex-row gap-6 text-xs lg:text-sm" style="color: black; font-weight: bold">
+        <ul class="hover:text-white flex flex-row text-xs lg:text-sm" style="color: black; font-weight: bold; gap:1.5vw">
+
+          <li class="relative group">
+            <a href="#" class=" header-li">
+              <div>
+              <span>K-12</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                class="dropdown-icon bi bi-chevron-down mt-1 v-arrow" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708">
+                </path>
+              </svg>
+            </div>
+            </a>
+
+            <div
+              class="absolute left-0 w-48  rounded hidden group-hover:flex flex-col text-black z-50 dropdown-menu header-li">
+              <ul class="relative top-9 bg-white shadow-lg rounded">
+                <li><a href="#" class="px-10 py-2">K-12 Solutions</a></li>
+                <li><a href="#" class="px-10 py-2">Competitions</a></li>
+              </ul>
+
+            </div>
+          </li>
+
           <li>
-            <a href="#" class="transition-colors header-li translate-scale">K-12</a>
+            <a href="#" class=" header-li">Higher Education</a>
+          </li>
+
+
+
+          <li>
+            <a href="#" class="header-li">Trunkey Projects</a>
           </li>
           <li class="relative group">
-  <a href="#" class="transition-colors header-li">Higher Education <span class="v-arrow inline-block font-bold">v</span></a>
-  <div class="absolute left-0 w-48  rounded hidden group-hover:flex flex-col text-black z-50 dropdown-menu" >
-  <ul class="relative top-9 bg-white shadow-lg rounded"> 
-    <li><a href="#" class="px-10 py-2">Engineering</a></li>
-    <li><a href="#" class="px-10 py-2">Medical</a></li>
-    <li><a href="#" class="px-10 py-2">Architecture</a></li>
-  </ul>
+            <a href="#" class="transition-colors header-li">
+              <div>
+              <span>About</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                class="dropdown-icon bi bi-chevron-down mt-1 v-arrow" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708">
+                </path>
+              </svg>
+            </div>
+            </a>
+            <div
+              class="absolute left-0 w-48  rounded hidden group-hover:flex flex-col text-black z-50 dropdown-menu header-li">
+              <ul class="relative top-9 bg-white shadow-lg rounded">
+                <li><a href="#" class="px-10 py-2">About Us</a></li>
+                <li><a href="#" class="px-10 py-2">Group Companies</a></li>
+              </ul>
 
-  </div>
-</li>
-
-
-
-          <li>
-            <a href="#" class="hover:text-orange-500 transition-colors header-li">Trunkey Projects</a>
+            </div>
           </li>
           <li>
-            <a href="#" class="hover:text-orange-500 transition-colors header-li">About</a>
+            <a href="#" class="header-li">Our Group</a>
           </li>
           <li>
-            <a href="#" class="hover:text-orange-500 transition-colors header-li">Our Group</a>
-          </li>
-          <li>
-            <a href="#" class="hover:text-orange-500 transition-colors header-li">Resources</a>
+            <a href="#" class="header-li">Resources</a>
           </li>
         </ul>
       </div>
       <div>
-        <button class="text-sm text-white px-4 py-1 transition-colors" style="
-              background-color: #ff8c00;
-              border-radius: 50px;
-              font-weight: 400;
-            ">
+        <button class="text-sm text-white px-4 py-1  shop-now-btn">
           Shop Now
         </button>
       </div>
-      <div class="translate-scale flex flex-row bg-gray-100 gap-2 p-2" style="width: 10vw; border-radius:5px">
+      <div class="translate-scale flex flex-row bg-gray-100 gap-2 px-2 py-1" style="width: 10vw; border-radius:5px">
         <span class="cursor-pointer bg-gray-100 transition-colors" style="
              color: rgb(80, 80, 80);
               font-size: 18px;
@@ -188,9 +215,7 @@
 
       </div>
       <div>
-        <button class="text-sm text-white px-4 py-1 transition-colors" style="background-color: #ff8c00;
-              border-radius: 50px;
-              font-weight: 400;">
+        <button class="text-sm text-white px-4 py-1  shop-now-btn" >
           Contact
         </button>
       </div>
@@ -226,39 +251,45 @@
         </div>
 
         <div class="flex-1 px-6 py-8">
-          <ul class="space-y-6 text-black" >
+          <ul class="space-y-6 text-black">
             <li>
-              <a href="#" class="block text-lg font-bold hover:text-orange-500 transition-colors"
-                style="">K-12</a>
+              <div class="dropdown-mobile">
+                <button
+                  class="block w-full text-left text-lg font-bold hover:text-orange-500 transition-colors dropdown-toggle-mobile">
+                  K-12 <span class="v-arrow">▾</span>
+                </button>
+                <ul class="dropdown-menu-mobile hidden pl-4 mt-2 text-base text-gray-700">
+                  <li><a href="#" class="block py-1 hover:text-orange-500">K-12 Solutions</a></li>
+                  <li><a href="#" class="block py-1 hover:text-orange-500">Competitions</a></li>
+                </ul>
+              </div>
             </li>
             <li>
-  <div class="dropdown-mobile">
-    <button class="block w-full text-left text-lg font-bold hover:text-orange-500 transition-colors dropdown-toggle-mobile">
-      Higher Education ▾
-    </button>
-    <ul class="dropdown-menu-mobile hidden pl-4 mt-2 text-base text-gray-700">
-      <li><a href="#" class="block py-1 hover:text-orange-500">Engineering</a></li>
-      <li><a href="#" class="block py-1 hover:text-orange-500">Medical</a></li>
-      <li><a href="#" class="block py-1 hover:text-orange-500">Architecture</a></li>
-    </ul>
-  </div>
-</li>
+              <a href="#" class="block text-lg font-bold hover:text-orange-500 transition-colors" style="">Trunkey
+                Higher Education</a>
+            </li>
 
             <li>
-              <a href="#" class="block text-lg font-bold hover:text-orange-500 transition-colors"
-                style="">Trunkey Projects</a>
+              <a href="#" class="block text-lg font-bold hover:text-orange-500 transition-colors" style="">Trunkey
+                Projects</a>
             </li>
             <li>
-              <a href="#" class="block text-lg font-bold hover:text-orange-500 transition-colors"
-                style="">About</a>
+              <div class="dropdown-mobile">
+                <button
+                  class="block w-full text-left text-lg font-bold hover:text-orange-500 transition-colors dropdown-toggle-mobile">
+                  About <span class="v-arrow">▾</span>
+                </button>
+                <ul class="dropdown-menu-mobile hidden pl-4 mt-2 text-base text-gray-700">
+                  <li><a href="#" class="block py-1 hover:text-orange-500">About Us</a></li>
+                  <li><a href="#" class="block py-1 hover:text-orange-500">Group Companies</a></li>
+                </ul>
+              </div>
             </li>
             <li>
-              <a href="#" class="block text-lg font-bold hover:text-orange-500 transition-colors"
-                style="">Our Group</a>
+              <a href="#" class="block text-lg font-bold hover:text-orange-500 transition-colors" style="">Our Group</a>
             </li>
             <li>
-              <a href="#" class="block text-lg font-bold hover:text-orange-500 transition-colors"
-                style="">Resources</a>
+              <a href="#" class="block text-lg font-bold hover:text-orange-500 transition-colors" style="">Resources</a>
             </li>
           </ul>
 
@@ -278,7 +309,7 @@
               outline: none;
               border: none;
               font-size: 15px;
-            " >
+            ">
 
               </div>
             </div>
@@ -297,14 +328,12 @@
   <div>
     <div class="image-slider-wrapper">
       <div class="image-slider-track">
-        <img src="/images/new/Banner 3 - Higher Education.jpg" class="slider-image" />
 
         <img src="/images/SECTION 2/Main Header image.png.jpg" class="slider-image" />
         <img src="/images/new/Banner 2 - K-12.jpg" class="slider-image" />
 
         <img src="/images/new/Banner 3 - Higher Education.jpg" class="slider-image" />
 
-        <img src="/images/SECTION 2/Main Header image.png.jpg" class="slider-image" />
 
 
       </div>
@@ -317,27 +346,15 @@
         <div class="content-slider">
           <div class="slides-wrapper">
 
-            <div class="slide-content">
-              <div class="title">Higher Education: Advanced Real-World Expertise</div>
-              <div class="description">
-                Equip your institution with industry-grade labs, AI-driven simulations, and turnkey research spaces that
-                transform academic concepts into real-world expertise and career-ready skills.
-              </div>
-              <button class="learn-more-btn translate-scale">Learn More <span class="ml-10">→</span></button>
-
-            </div>
-
             <!-- Slide 1 Content -->
             <div class="slide-content">
-              <div class="title">
-                Inspiring Innovation, Empowering Education
-              </div>
+              <div class="title">Inspiring Innovation, Empowering Education</div>
               <div class="description">
                 Empowering educators and institutions with hands on Ed-Tech to
                 Spark curiosity, boost engagement, and transform classroom
                 learning.
               </div>
-              <button class="learn-more-btn translate-scale">Learn More <span class="ml-10">→</span></button>
+              <button class="learn-more-btn translate-scale">Learn More <span class="ml-10 arrow">→</span></button>
 
             </div>
 
@@ -348,7 +365,7 @@
                 Hands-on coding, robotics, science, and AI kits that ignite creativity, boost confidence, and inspire
                 young innovators to explore STEAM.
               </div>
-              <button class="learn-more-btn translate-scale">Learn More <span class="ml-10">→</span></button>
+              <button class="learn-more-btn translate-scale">Learn More <span class="ml-10 arrow">→</span></button>
 
             </div>
 
@@ -359,22 +376,11 @@
                 Equip your institution with industry-grade labs, AI-driven simulations, and turnkey research spaces that
                 transform academic concepts into real-world expertise and career-ready skills.
               </div>
-              <button class="learn-more-btn translate-scale">Learn More <span class="ml-10">→</span></button>
+              <button class="learn-more-btn translate-scale">Learn More <span class="ml-10 arrow">→</span></button>
 
             </div>
 
-            <div class="slide-content">
-              <div class="title">
-                Inspiring Innovation, Empowering Education
-              </div>
-              <div class="description">
-                Empowering educators and institutions with hands on Ed-Tech to
-                Spark curiosity, boost engagement, and transform classroom
-                learning.
-              </div>
-              <button class="learn-more-btn translate-scale">Learn More <span class="ml-10">→</span></button>
 
-            </div>
 
           </div>
         </div>
@@ -393,12 +399,12 @@
   <div class="circle-section">
     <div>
       <img src="/images/SECTION 1/Large Circle shape 1.png" class="absolute large-circle-shape-1"
-        style="height: 70vh; left: 0vw; top: 70vh; z-index: 12" alt="" />
+        style="height: 70vh; left: 0vw; top: 70vh; z-index: 9" alt="" />
 
       <img src="/images/SECTION 1/Small Circle shape 2 .png" class="relative circle-shape-2"
         style="height: 15vh; left: 6vw; top: -4vh; z-index: 12" alt="" />
 
-      <img src="/images/SECTION 2/Circle.png" class="absolute right-circle"
+      <img src="/images/SECTION 1/Circle shape 3.png" class="absolute right-circle"
         style="height: 28vh; right: 15vw; top: 65%; z-index: 12" alt="" />
       <img src="/images/SECTION 1/Circle shape 4.png" class="absolute right-circle-2"
         style="height: 28vh; top: 70vh; z-index: 12" alt="" />
@@ -427,10 +433,10 @@
           </div>
           <div class="btn-container">
             <button class="learn-more-btn translate-scale hidden md:block">Explore K12 Solutions <span
-                class="ml-10">→</span></button>
+                class="ml-10 arrow" style="padding: 10px 15px">→</span></button>
 
 
-            <button class="explore-btn translate-scale block md:hidden">
+            <button class="explore-btn translate-scale block md:hidden" >
               Explore K12 Solutions
               <span class="arrow">→</span>
             </button>
@@ -448,7 +454,7 @@
           </p>
         </div>
         <div class="btn-container">
-          <button class="learn-more-btn translate-scale hidden md:block">Explore HED Solutions <span
+          <button class="learn-more-btn translate-scale hidden md:block" style="padding: 10px 15px">Explore HED Solutions <span
               class="ml-10">→</span></button>
 
           <button class="explore-btn translate-scale block md:hidden">
@@ -496,6 +502,7 @@
             <span class="text-lg md:text-4xl font-bold mr-8" style="width: 20%">K-12 <br />
               Education</span>
           </div>
+          <div class="mr-8 mt-1 seperate-line" style="width:4px; background-color: #F8C123; border-radius: 20px;"></div>
           <div class="mt-4">
             <span class="text-lg md:text-2xl font-bold">Inspiring Young <br />
               Minds to Build the Future
@@ -524,12 +531,10 @@
         <div class="p-3 k-12-card-outer-div" style="
               background-color: rgb(0, 121, 145);
               border-radius: 10px;
-              height: fit-content;
             ">
           <div class="p-4 k-12 k-12-card-inner-div" style="
                 border: 1px dashed white;
                 border-radius: 10px;
-                min-height: 240px;
               ">
             <img src="/images/SECTION 2/Card 1 icon.png" style="width: 4vw" alt="" />
             <h1 style="font-weight: 700; margin-top: 15px; font-size: 1.1rem">
@@ -544,7 +549,6 @@
         <div class="p-3 k-12-card-outer-div" style="
               background-color: #d1672d;
               border-radius: 10px;
-              height: fit-content;
             ">
           <div class="p-4 k-12-card-inner-div" style="border: 1px dashed white; border-radius: 10px">
             <img src="/images/SECTION 2/Card 2 icon.png" style="width: 4vw" alt="" />
@@ -560,7 +564,6 @@
         <div class="p-3 k-12-card-outer-div" style="
               background-color: #228b22;
               border-radius: 10px;
-              height: fit-content;
             ">
           <div class="p-4 k-12-card-inner-div" style="border: 1px dashed white; border-radius: 10px">
             <img src="/images/SECTION 2/Card 3 icon.png" style="width: 4vw" alt="" />
@@ -573,11 +576,10 @@
             </p>
           </div>
         </div>
-        
+
         <div class="p-3 k-12-card-outer-div" style="
               background-color: #8b2424;
               border-radius: 10px;
-              height: fit-content;
             ">
           <div class="p-4 k-12-card-inner-div" style="border: 1px dashed white; border-radius: 10px">
             <img src="/images/SECTION 2/Card 5 icon.png" style="width: 3vw" alt="" />
@@ -593,15 +595,15 @@
         <div class="p-3 k-12-card-outer-div" style="
               background-color: #0085a9;
               border-radius: 10px;
-              height: fit-content;
             ">
           <div class="p-4 k-12-card-inner-div" style="border: 1px dashed white; border-radius: 10px">
             <img src="/images/SECTION 2/Card 6 icon.png" style="width: 3vw" alt="" />
             <h1 style="font-weight: 700; margin-top: 15px; font-size: 1.1rem">
-              AI & Autonomous Kits 
+              AI & Autonomous Kits
             </h1>
             <p style="font-size: x-small; margin-top: 15px; font-size: 0.8rem">
-              Introducing students to artificial intelligence and automation through hands-on, guided educational kits designed for classrooms.
+              Introducing students to artificial intelligence and automation through hands-on, guided educational kits
+              designed for classrooms.
             </p>
           </div>
         </div>
@@ -615,26 +617,27 @@
 
   <!-- Section 2 -->
   <div id="section2" class="context">
-    <div class="flex flex-row justify-between pt-10" style="
+    <div class="flex flex-row justify-between" style="
           height: 70vh;
           background-image: url('images/HED Tab Open File/Higher Education-assets/Higher education tab holder.png');
           background-size: cover;
-          background-position: center;
+          background-position: center;  
         ">
-      <div class="pl-32 flex flex-col justify-center" style="width: 50%; color: white; margin-top: -210px">
-        <div class="flex flex-row items-start">
+      <div class="pl-32 flex flex-col justify-center" style="width: 70%; color: white; margin-top: -270px">
+        <div class="flex flex-col md:flex-row">
           <div>
-            <span class="text-4xl font-bold mr-8" style="width: 20%">
+            <span class="text-lg md:text-4xl font-bold mr-8" style="width: 20%">
               Higher<br />Education
             </span>
           </div>
-          <div class="mt-2">
-            <span class="text-2xl font-bold">
+          <div class="mr-8 mt-1 seperate-line" style="width:4px; background-color: #fff; border-radius: 20px;"></div>
+          <div class="mt-4">
+            <span class="text-lg md:text-2xl font-bold">
               Where Innovation<br />Meets Application
             </span>
           </div>
         </div>
-        <p class="mt-4" style="width: 90%">
+        <p class="mt-8" style="width: 50%">
           Industry-aligned labs designed to turn students into future-ready
           professionals.
         </p>
@@ -837,114 +840,106 @@
     </div>
   </div>
 
-  <div class="atlab-trust">
+  <!-- <div class="atlab-trust">
     <img src="/images/atlab.png" alt="" />
-  </div>
-  <!-- <div class="relative atlab-trust" style="height: 170vh">
-      <img
-        src="/images/SECTION 3/Circle shape 22.png"
-        style="width: 30vw; position: absolute; top: -8vh; left: 9vw"
-      />
-      <img
-        src="/images/SECTION 3/ATLAB Trusted partner Holder .png"
-        alt=""
-        class="relative"
-      />
-      <div class="absolute">
-        <h1
-          class="relative"
-          style="
-            bottom: 141vh;
-            left: 49vw;
-            position: relative;
+  </div> -->
+  <div class="relative atlab-trust" style="height:100%; width: 100%">
+    <img src="/images/SECTION 3/Circle shape 23.png" class="translate-scale"
+      style="width: 30vw; position: absolute; top: -5%; left: 9%; " />
+    <img src="/images/SECTION 3/ATLAB Trusted partner Holder 1.png" alt="" class="relative overflow-hidden"
+      style="z-index: -1;" />
+    <div class="">
+      <h1 class="" style="
+            top: 1%;
+            left: 50%;
+            max-width:100%;
+            position: absolute;
             color: white;
             font-family: 'poppins';
             font-weight: 900;
             font-size: 40px;
             margin-top: 80px;
-          "
-        >
-          Atlab - Your Trusted <br />
-          Partner in Education
-        </h1>
-      </div>
-      <div
-        class="absolute"
-        style="
-          bottom: 110vh;
-          left: 40vw;
-          position: relative;
+            height: 100%;
+
+          ">
+        Atlab - Your Trusted <br />
+        Partner in Education
+      </h1>
+    </div>
+    <div class="relative" style="
+          top: 25%;
+          left: 40%;
+          max-width: 100%;
+          position: absolute;
           color: white;
           font-family: 'poppins';
           font-weight: 500;
           font-size: 12px;
           width: 50%;
-        "
-      >
-        <p class="relative">
-          With a commitment to excellence in education technology, ATLAB stands
-          as a trusted partner for schools, universities, and training
-          institutions worldwide. Our expertise, global reach, and hands-on
-          approach set us apart in the industry, enabling us to deliver complete
-          learning ecosystems that drive innovation and real-world learning
-          experiences.
-        </p>
-        <div
-          style="
+          height: 100%;
+        ">
+      <p class="relative">
+        With a commitment to excellence in education technology, ATLAB stands
+        as a trusted partner for schools, universities, and training
+        institutions worldwide. Our expertise, global reach, and hands-on
+        approach set us apart in the industry, enabling us to deliver complete
+        learning ecosystems that drive innovation and real-world learning
+        experiences.
+      </p>
+      <div style="
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 40px;
             margin-top: 40px;
-          "
-        >
-          <div class="section4-div">
-            <img src="/images/SECTION 3/Icon 1.png" alt="" />
-            <h1>400+ Years of Expertise. One Vision.</h1>
-            <p>
-              Transform classrooms into dynamic hubs with 400+ man-years of
-              combined experience.
-            </p>
-          </div>
-          <div class="section4-div">
-            <img src="/images/SECTION 3/Icon 2.png" alt="" />
-            <h1>Your Vision, Our Blueprint.</h1>
-            <p>End-to-end lab design integrated with your educational goals.</p>
-          </div>
-          <div class="section4-div">
-            <img src="/images/SECTION 3/Icon 3.png" alt="" />
-            <h1>Growth Partners, Not Vendors.</h1>
-            <p>
-              We are here to mentor and co-create labs that amplify curriculum
-              impact and provide real-world skills.
-            </p>
-          </div>
-          <div class="section4-div">
-            <img src="/images/SECTION 3/Icon 4.png" alt="" />
-            <h1>Built for Educators by Students.</h1>
-            <p>
-              Tools that teach Knowledge through experiments. Versatile teaching
-              resources for every student.
-            </p>
-          </div>
-          <div class="section4-div">
-            <img src="/images/SECTION 3/Icon 5.png" alt="" />
-            <h1>Precision Meets Practicality.</h1>
-            <p>
-              With Certified professionals and high-accuracy setups as per
-              international standards.
-            </p>
-          </div>
-          <div class="section4-div">
-            <img src="/images/SECTION 3/Icon 6.png" alt="" />
-            <h1>Seamless Support, Always.</h1>
-            <p>
-              Our AMC's are maintenance-free with 24/7 monitoring support across
-              all nations.
-            </p>
-          </div>
+          ">
+        <div class="section4-div">
+          <img src="/images/SECTION 3/Icon 1.png" alt="" />
+          <h1>400+ Years of Expertise. One Vision.</h1>
+          <p>
+            Transform classrooms into dynamic hubs with 400+ man-years of
+            combined experience.
+          </p>
+        </div>
+        <div class="section4-div">
+          <img src="/images/SECTION 3/Icon 2.png" alt="" />
+          <h1>Your Vision, Our Blueprint.</h1>
+          <p>End-to-end lab design integrated with your educational goals.</p>
+        </div>
+        <div class="section4-div">
+          <img src="/images/SECTION 3/Icon 3.png" alt="" />
+          <h1>Growth Partners, Not Vendors.</h1>
+          <p>
+            We are here to mentor and co-create labs that amplify curriculum
+            impact and provide real-world skills.
+          </p>
+        </div>
+        <div class="section4-div">
+          <img src="/images/SECTION 3/Icon 4.png" alt="" />
+          <h1>Built for Educators by Students.</h1>
+          <p>
+            Tools that teach Knowledge through experiments. Versatile teaching
+            resources for every student.
+          </p>
+        </div>
+        <div class="section4-div">
+          <img src="/images/SECTION 3/Icon 5.png" alt="" />
+          <h1>Precision Meets Practicality.</h1>
+          <p>
+            With Certified professionals and high-accuracy setups as per
+            international standards.
+          </p>
+        </div>
+        <div class="section4-div">
+          <img src="/images/SECTION 3/Icon 6.png" alt="" />
+          <h1>Seamless Support, Always.</h1>
+          <p>
+            Our AMC's are maintenance-free with 24/7 monitoring support across
+            all nations.
+          </p>
         </div>
       </div>
-    </div> -->
+    </div>
+  </div>
 
   <div class="relative new-atlab-trust">
     <img src="/images/atlab-mobile.png" style="height: 40vh; width: 100%" alt="" />
@@ -1195,7 +1190,7 @@
   <!-- Section 5-->
   <div class="section5">
     <div class="counter-banner">
-      <img src="images\Section 5\Counter banner.png" alt="Counter Banner" />
+      <img src="images\Section 5\Counter banner-2.png" alt="Counter Banner" />
 
       <div class="counter-block educators">
         <h3>Educators empowered</h3>
@@ -1217,7 +1212,7 @@
 
       <div class="counter-block countries">
         <h3>Countries reached</h3>
-        <p data-target="6" data-suffix="">0</p>
+        <p data-target="6" data-suffix="" data-prefix="0">0</p>
       </div>
 
       <div class="counter-block accredited">
@@ -1238,7 +1233,7 @@
     </div>
 
     <div class="LearningJourneyContent">
-      <img src="images\Section 6\Learning journey.png" alt="Overlay Image" style="position: absolute; top:13%" />
+      <img src="images\Section 6\Learning journey 2.png" alt="Overlay Image" style="position: absolute; top:8%" />
       <div class="LearningText">
         <h2>Your Complete Learning Partner</h2>
       </div>
@@ -1403,9 +1398,8 @@
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
             ipsum suspendisse
           </p>
-          <a href="#" class="read-more-btn">
+          <a href="#" class="lab-button" style="margin: 0px;">
             Read More
-            <span class="arrow-icon ml-10">→</span>
           </a>
         </div>
       </div>
@@ -1421,9 +1415,8 @@
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
             ipsum suspendisse ultrices gravida. Risus
           </p>
-          <a href="#" class="read-more-btn">
+          <a href="#" class="lab-button" style="margin: 0px;">
             Read More
-            <span class="arrow-icon ml-10">→</span>
           </a>
         </div>
       </div>
@@ -1439,9 +1432,8 @@
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
             ipsum suspendisse ultrices gravida. Risus
           </p>
-          <a href="#" class="read-more-btn">
+          <a href="#" class="lab-button" style="margin: 0px;">
             Read More
-            <span class="arrow-icon ml-10">→</span>
           </a>
         </div>
       </div>
@@ -1698,12 +1690,12 @@
     });
 
     // Toggle dropdown in mobile
-document.querySelectorAll('.dropdown-toggle-mobile').forEach(button => {
-  button.addEventListener('click', () => {
-    const menu = button.nextElementSibling;
-    menu.classList.toggle('hidden');
-  });
-});
+    document.querySelectorAll('.dropdown-toggle-mobile').forEach(button => {
+      button.addEventListener('click', () => {
+        const menu = button.nextElementSibling;
+        menu.classList.toggle('hidden');
+      });
+    });
 
 
     function showTab(sectionId, clickedTab) {
@@ -1723,7 +1715,7 @@ document.querySelectorAll('.dropdown-toggle-mobile').forEach(button => {
       // Highlight selected tab
       clickedTab.classList.add("active");
     }
-    let currentSlide = 1; // Start from actual slide 1
+    let currentSlide = 0; // Start from actual slide 1
     const slidesWrapper = document.querySelector(".slides-wrapper");
     const imageSliderTrack = document.querySelector(".image-slider-track");
     const dots = document.querySelectorAll(".dot");
@@ -1736,71 +1728,50 @@ document.querySelectorAll('.dropdown-toggle-mobile').forEach(button => {
       dots[index].classList.add("active");
     }
 
-    function goToSlide(index, animated = true) {
-      if (animated === false) {
-        slidesWrapper.style.transition = "none";
-        imageSliderTrack.style.transition = "none";
-      } else {
-        slidesWrapper.style.transition = "transform 0.7s ease-in-out";
-        imageSliderTrack.style.transition = "transform 0.7s ease-in-out";
-      }
+    function goToSlide(index) {
+      const contentSlides = document.querySelectorAll(".slide-content");
+      const imageSlides = document.querySelectorAll(".slider-image");
 
-      const translatePercent = -20 * index; // 5 slides => 100 / 5 = 20%
-      const translatePercent2 = -100 * index; // 5 slides => 100 / 5 = 20%
+      // Remove 'active' from all slides
+      contentSlides.forEach(slide => slide.classList.remove("active"));
+      imageSlides.forEach(image => image.classList.remove("active"));
 
-      slidesWrapper.style.transform = `translateX(${translatePercent}%)`;
-      imageSliderTrack.style.transform = `translateX(${translatePercent2}vw)`;
+      // Add 'active' to the current index
+      contentSlides[index].classList.add("active");
+      imageSlides[index].classList.add("active");
+
+      updateActiveDot(index);
+      currentSlide = index;
     }
 
+
     function nextSlide() {
-      currentSlide++;
-      goToSlide(currentSlide);
-      if (currentSlide > totalSlides) {
-        setTimeout(() => {
-          currentSlide = 1;
-          goToSlide(currentSlide, false);
-        }, 700);
-      }
-      updateActiveDot((currentSlide - 1) % totalSlides);
+      let nextIndex = (currentSlide + 1) % totalSlides;
+      goToSlide(nextIndex);
     }
 
     function previousSlide() {
-      currentSlide--;
-      goToSlide(currentSlide);
-      if (currentSlide === 0) {
-        setTimeout(() => {
-          currentSlide = totalSlides;
-          goToSlide(currentSlide, false);
-        }, 700);
-      }
-      updateActiveDot((currentSlide - 1 + totalSlides) % totalSlides);
+      let prevIndex = (currentSlide - 1 + totalSlides) % totalSlides;
+      goToSlide(prevIndex);
     }
 
     dots.forEach((dot, index) => {
       dot.addEventListener("click", () => {
-        currentSlide = index + 1;
-        goToSlide(currentSlide);
-        updateActiveDot(index);
-
-        // Optional: Restart auto sliding from this point
         clearInterval(autoSlideInterval);
-        autoSlideInterval = setInterval(nextSlide, 4000);
+        goToSlide(index);
+        startAutoSlide();
       });
     });
 
-    function autoUpdateSlides() {
-      autoSlideInterval = setInterval(nextSlide, 4000);
+
+    function startAutoSlide() {
+      autoSlideInterval = setInterval(nextSlide, 3000);
     }
 
 
+    goToSlide(0);
+    startAutoSlide();
 
-    function autoUpdateSlides() {
-      setInterval(nextSlide, 4000);
-    }
-
-    goToSlide(currentSlide, false);
-    updateActiveDot(0);
-    autoUpdateSlides();
 
 
 
@@ -1830,7 +1801,7 @@ document.querySelectorAll('.dropdown-toggle-mobile').forEach(button => {
     }
 
 
-    function animateCounter(element, target, duration = 1000, suffix = '') {
+    function animateCounter(element, target, duration = 1000, suffix = '', prefix = '') {
       const start = 0;
       const increment = target / (duration / 16);
       let current = start;
@@ -1841,12 +1812,14 @@ document.querySelectorAll('.dropdown-toggle-mobile').forEach(button => {
           current = target;
           clearInterval(timer);
         }
-        element.textContent = Math.floor(current).toLocaleString() + suffix;
+        const formattedValue = prefix + Math.floor(current).toLocaleString() + suffix;
+        element.textContent = formattedValue;
       }, 16);
     }
 
     function triggerCounterAnimation() {
       const section = document.querySelector('.section5');
+
       if (!section || section.classList.contains('animated')) return;
 
       section.classList.add('animated');
@@ -1862,8 +1835,9 @@ document.querySelectorAll('.dropdown-toggle-mobile').forEach(button => {
       counters.forEach((counter, index) => {
         const target = parseInt(counter.dataset.target);
         const suffix = counter.dataset.suffix || '';
+        const prefix = counter.dataset.prefix || '';
         setTimeout(() => {
-          animateCounter(counter, target, 1000, suffix);
+          animateCounter(counter, target, 1000, suffix, prefix);
         }, index * 300 + 500);
       });
     }
