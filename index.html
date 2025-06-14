@@ -134,26 +134,27 @@
       </div>
       <div class="" style="margin-left: 3vw">
         <!-- <img src="/images/SECTION 1/Header sections.png" alt="" /> -->
-        <ul class="hover:text-white flex flex-row text-xs lg:text-sm" style="color: black; font-weight: bold; gap:1.5vw">
+        <ul class="hover:text-white flex flex-row text-xs lg:text-sm"
+          style="color: black; font-weight: bold; gap:1.5vw">
 
           <li class="relative group">
             <a href="#" class=" header-li">
               <div>
-              <span>K-12</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
-                class="dropdown-icon bi bi-chevron-down mt-1 v-arrow" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708">
-                </path>
-              </svg>
-            </div>
+                <span>K-12</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                  class="dropdown-icon bi bi-chevron-down mt-1 v-arrow" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708">
+                  </path>
+                </svg>
+              </div>
             </a>
 
             <div
               class="absolute left-0 w-48  rounded hidden group-hover:flex flex-col text-black z-50 dropdown-menu header-li">
               <ul class="relative top-9 bg-white shadow-lg rounded">
-                <li><a href="#" class="px-10 py-2">K-12 Solutions</a></li>
-                <li><a href="#" class="px-10 py-2">Competitions</a></li>
+                <li><a href="#" class="px-5 py-2">K-12 Solutions</a></li>
+                <li><a href="#" class="px-5 py-2">Competitions</a></li>
               </ul>
 
             </div>
@@ -171,20 +172,20 @@
           <li class="relative group">
             <a href="#" class="transition-colors header-li">
               <div>
-              <span>About</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
-                class="dropdown-icon bi bi-chevron-down mt-1 v-arrow" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708">
-                </path>
-              </svg>
-            </div>
+                <span>About</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                  class="dropdown-icon bi bi-chevron-down mt-1 v-arrow" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708">
+                  </path>
+                </svg>
+              </div>
             </a>
             <div
               class="absolute left-0 w-48  rounded hidden group-hover:flex flex-col text-black z-50 dropdown-menu header-li">
               <ul class="relative top-9 bg-white shadow-lg rounded">
-                <li><a href="#" class="px-10 py-2">About Us</a></li>
-                <li><a href="#" class="px-10 py-2">Group Companies</a></li>
+                <li><a href="#" class="px-5 py-2">About Us</a></li>
+                <li><a href="#" class="px-5 py-2">Group Companies</a></li>
               </ul>
 
             </div>
@@ -215,7 +216,7 @@
 
       </div>
       <div>
-        <button class="text-sm text-white px-4 py-1  shop-now-btn" >
+        <button class="text-sm text-white px-4 py-1  shop-now-btn">
           Contact
         </button>
       </div>
@@ -436,7 +437,7 @@
                 class="ml-10 arrow" style="padding: 10px 15px">→</span></button>
 
 
-            <button class="explore-btn translate-scale block md:hidden" >
+            <button class="explore-btn translate-scale block md:hidden">
               Explore K12 Solutions
               <span class="arrow">→</span>
             </button>
@@ -454,8 +455,8 @@
           </p>
         </div>
         <div class="btn-container">
-          <button class="learn-more-btn translate-scale hidden md:block" style="padding: 10px 15px">Explore HED Solutions <span
-              class="ml-10">→</span></button>
+          <button class="learn-more-btn translate-scale hidden md:block" style="padding: 10px 15px">Explore HED
+            Solutions <span class="ml-10">→</span></button>
 
           <button class="explore-btn translate-scale block md:hidden">
             Explore HED Solutions
@@ -1443,15 +1444,23 @@
   <!-- Section 9 -->
   <div class="presence-section">
     <h2>Our Presence</h2>
+
+    <div class="flex justify-center gap-6">
     <div class="presence-content">
       <div class="presence-map">
-        <img src="images\Section 9\Map.png" alt="World Map showing our presence" />
+        <img src="images/uae.png" alt="World Map showing our presence" id="map-image"/>
       </div>
+    </div>
 
       <div class="presence-details">
-        <div class="country-details">
-          <h3>UAE</h3>
-          <span class="company-name">Atlab Trading L.L.C.</span>
+        <div class="country-details" data-image="images/uae.png">
+          <div class="main-country flex gap-2">
+            <div style="height: 60px; width: 5px; background-color:#1877f2"></div>
+            <div> 
+              <h3>UAE</h3>
+              <span class="company-name">Atlab Trading L.L.C.</span>
+            </div>
+          </div>
           <div class="contact-info">
             <p>Ahmad Mustafa Hassan Alali Compound,</p>
             <p>Office #19, Qusais #2,</p>
@@ -1462,9 +1471,14 @@
           </div>
         </div>
 
-        <div class="country-details">
-          <h3>Oman</h3>
-          <span class="company-name">Atlab</span>
+        <div class="country-details"  data-image="images/oman.png">
+          <div class="main-country flex gap-2">
+            <div style="height: 60px; width: 5px; background-color:#1877f2"></div>
+            <div> 
+              <h3>Oman</h3>
+              <span class="company-name">Atlab</span>
+            </div>
+          </div>
           <div class="contact-info">
             <p>P.O. Box 1858, Flat No.24, Building No.234,</p>
             <p>Al Hail South, Muscat, Sultanate of Oman</p>
@@ -1474,9 +1488,14 @@
           </div>
         </div>
 
-        <div class="country-details">
-          <h3>Kuwait</h3>
-          <span class="company-name">Centena Scientific Devices W.L.L.</span>
+        <div class="country-details"  data-image="images/kuwait.png">
+          <div class="main-country flex gap-2">
+            <div style="height: 60px; width: 5px; background-color:#1877f2"></div>
+            <div> 
+              <h3>Kuwait</h3>
+              <span class="company-name">Centena Scientific Devices W.L.L.</span>
+            </div>
+          </div>
           <div class="contact-info">
             <p>P.O. Box 3936, SAFAT 13040,</p>
             <p>Kuwait, Office #202</p>
@@ -1488,9 +1507,14 @@
           </div>
         </div>
 
-        <div class="country-details">
-          <h3>Saudi Arabia - Riyadh</h3>
-          <span class="company-name">Horizon Informatics Trading Co.</span>
+        <div class="country-details"  data-image="images/saudi.png">
+          <div class="main-country flex gap-2">
+            <div style="height: 60px; width: 5px; background-color:#1877f2"></div>
+            <div> 
+              <h3>Saudi Arabia - Riyadh</h3>
+              <span class="company-name">Horizon Informatics Trading Co.</span>
+            </div>
+          </div>
           <div class="contact-info">
             <p>Al Aqaria Al Sitin Building, Bld#6567,</p>
             <p>Tower 1, 1st Floor,</p>
@@ -1503,9 +1527,14 @@
           </div>
         </div>
 
-        <div class="country-details">
-          <h3>Qatar</h3>
-          <span class="company-name">Petro Emphor Co. W.L.L.</span>
+        <div class="country-details"  data-image="images/qatar.png">
+          <div class="main-country flex gap-2">
+            <div style="height: 60px; width: 5px; background-color:#1877f2"></div>
+            <div> 
+              <h3>Qatar</h3>
+              <span class="company-name">Petro Emphor Co. W.L.L.</span>
+            </div>
+          </div>
           <div class="contact-info">
             <p>P.O. Box 31822 C101, Block-24,</p>
             <p>Salwa Building, Barwa Commercial</p>
@@ -1523,7 +1552,6 @@
 
   <!-- Footer -->
   <footer class="site-footer">
-    <img src="images/Footer/Footer.png" style="width: 100%; height: 620px" />
     <div class="footer-grid">
       <!-- Left Column -->
       <div class="footer-col about-us">
@@ -1560,14 +1588,12 @@
             Ahmad Mustafa Hasan Ahl Compound,<br />Office No 19 Al Qusais
             Industrial,<br />Dubai, United Arab Emirates.
           </p>
-          <p class="small-text" style="margin-top: 20px">+971 4 3880008</p>
+          <p class="small-text" style="margin-top: 20px">+9 7143880008</p>
           <p class="small-text" style="margin-top: 20px">
             <a href="mailto:enquiry.atlab@centena.com">enquiry.atlab@centena.com</a>
           </p>
         </div>
 
-        <!-- Subcolumns -->
-        <div class="footer-subcolumns">
           <!-- Subcolumn 1 -->
           <div class="footer-subcol">
             <div class="footer-col our-solutions">
@@ -1576,6 +1602,19 @@
                 <li><a href="#">K-12 Education</a></li>
                 <li><a href="#">Higher Education</a></li>
                 <li><a href="#">Biomedical Solutions</a></li>
+              </ul>
+            </div>
+            <div class="footer-col useful-links">
+              <h4>Useful Links</h4>
+              <ul class="small-text square-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Group Companies</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Careers</a></li>
               </ul>
             </div>
             <div class="footer-col group-companies">
@@ -1590,23 +1629,7 @@
             </div>
           </div>
 
-          <!-- Subcolumn 2 -->
-          <div class="footer-subcol">
-            <div class="footer-col useful-links">
-              <h4>Useful Links</h4>
-              <ul class="small-text square-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Group Companies</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Sitemap</a></li>
-                <li><a href="#">Careers</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+       
       </div>
     </div>
 
@@ -1625,19 +1648,20 @@
     </div>
 
     <!-- Footer Credits -->
-    <div class="footer-credits">
+    
+  </footer>
+
+  <div class="footer-credits">
       <p>Copyright © 2025 ATLAB. ALL Rights Reserved.</p>
       <div class="social-icons">
         <a href="https://facebook.com/yourpage" class="social-icon facebook" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24">
-            <path
-              d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            <text x="12" y="17" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="currentColor">f</text>
           </svg>
         </a>
         <a href="https://twitter.com/yourhandle" class="social-icon twitter" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24">
-            <path
-              d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+            <text x="12" y="17" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="currentColor">X</text>
           </svg>
         </a>
         <a href="https://linkedin.com/company/yourcompany" class="social-icon linkedin" target="_blank"
@@ -1656,7 +1680,6 @@
         </a>
       </div>
     </div>
-  </footer>
 
   <script>
     const mobileMenuButton = document.getElementById("mobile-menu-button");
@@ -1883,6 +1906,23 @@
         fallbackScrollHandler(); // check initially too
       }
     });
+
+
+      const countryBlocks = document.querySelectorAll(".country-details");
+  const mapImage = document.getElementById("map-image");
+  const defaultImage = "images/uae.png";
+
+  countryBlocks.forEach((block) => {
+    const newImage = block.getAttribute("data-image");
+
+    block.addEventListener("mouseenter", () => {
+      mapImage.src = newImage;
+    });
+
+    block.addEventListener("mouseleave", () => {
+      mapImage.src = defaultImage;
+    });
+  });
 
 
   </script>
