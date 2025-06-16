@@ -236,6 +236,7 @@ body {
 .partners-section {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 60px;
 }
 
@@ -298,8 +299,9 @@ body {
 }
 
 .counter-block p {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 800;
+  width: 100%;
   background: linear-gradient(45deg, #ffffff, #f0f0f0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -445,7 +447,7 @@ body {
   position: absolute;
   color: white;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 1.3vw;
   padding: 6px 12px;
   border-radius: 6px;
   pointer-events: auto;
@@ -457,7 +459,7 @@ body {
 .overlay-text p {
   position: absolute;
   margin: 0;
-  font-size: 13px;
+  font-size: 1vw;
   font-weight: 500;
   line-height: 1.4em;
   width: 16vw;
@@ -482,11 +484,11 @@ body {
 
 .step4 {
   top: 34%;
-  left: 38%;
+  left: 37.5%;
 }
 
 .step5 {
-  top: 15%;
+  top: 14%;
   left: 47%;
 }
 
@@ -960,7 +962,6 @@ body {
   .presence-map,
   .presence-details {
     flex: none;
-    width: 100%;
   }
 }
 
