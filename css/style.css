@@ -13,6 +13,10 @@
   transform: rotate(180deg);
 }
 
+.tab:hover{
+  text-decoration: underline;
+  transition: all 0.1s ease-in-out;
+}
 .dropdown-menu li {
   display: flex;
   align-items: center;
