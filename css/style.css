@@ -1,5 +1,5 @@
 .logo-img {
-  height: 7vh;
+  height: 60px;
   width: auto;
 }
 
@@ -57,6 +57,10 @@
   transition: transform 0.2s ease-in-out;
 }
 
+.pl-32{
+  padding-left: 8.5vw;
+}
+
 .power-education-head {
   margin-bottom: 0px !important;
   height: 25px;
@@ -69,7 +73,7 @@
 }
 
 body {
-  font-family: "poppins", sans-serif;
+  font-family: "cera-pro";
 }
 
 /* disable section line */
@@ -152,6 +156,9 @@ body {
 
 /* Higher tab section phone view */
 @media (max-width: 768px) {
+  .main-head{
+    gap: 0 !important; 
+  }
   .flex.flex-row.justify-between {
     flex-direction: row !important;
     height: auto !important;
@@ -160,7 +167,7 @@ body {
 
   .flex.flex-row.justify-between > div:first-child {
     width: 100% !important;
-    padding-left: 20px !important;
+    padding-left: 25px !important;
     margin-top: 0 !important;
   }
 
@@ -233,14 +240,14 @@ body {
 
 /* section 2 partners*/
 .partners-container {
-  max-width: 1200px;
+  max-width: 90vw;
   margin-bottom: 10px;
 }
 
 .partners-section {
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin-bottom: 50px;
   gap: 60px;
 }
 
@@ -289,13 +296,12 @@ body {
   position: absolute;
   color: rgb(240, 240, 240);
   text-align: center;
-  font-family: sans-serif;
   text-align: left;
 }
 
 .counter-block h3 {
   margin: 0;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
 }
 .counter-block:hover {
@@ -303,7 +309,7 @@ body {
 }
 
 .counter-block p {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 800;
   width: 100%;
   color: #fff;
@@ -312,7 +318,7 @@ body {
 .educators {
   top: 20%;
   left: 10%;
-  width: 10%;
+  width: 5%;
 }
 
 .students {
@@ -331,7 +337,7 @@ body {
 .countries {
   top: 60%;
   left: 10%;
-  width: 8%;
+  width: 5%;
 }
 
 .accredited {
@@ -609,15 +615,48 @@ body {
   line-height: 1.6;
 }
 
-.clients-logo-7 {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  justify-content: center;
-}
-.clients-logo-7 img {
-  width: 25vh;
-}
+ .clients-logo-carousel {
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+            background: white;
+        }
+
+        .clients-logo-track {
+            display: flex;
+            gap: 40px;
+            animation: scroll-left 40s linear infinite;
+            width: max-content;
+        }
+
+        .clients-logo-track img {
+          height: 150px;
+          overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .clients-logo-track img:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        /* Animate left scroll */
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Pause animation on hover */
+        .clients-logo-carousel:hover .clients-logo-track {
+            animation-play-state: paused;
+        }
+
+
 
 /* Section 8 */
 .section8 {
@@ -976,7 +1015,11 @@ body {
     margin-top: 0px;
   }
 }
-
+@media (max-width: 1024px) {
+.pl-32{
+  padding-left: 80px;
+}
+}
 /* Footer */
 /* DESKTOP VIEW CSS - Fixed with Border Line Above Certified Section */
 @media (min-width: 1024px) {
@@ -988,6 +1031,7 @@ body {
     position: relative;
     z-index: 1;
   }
+  
   .site-footer .footer-grid {
     background-color: #070f18;
     display: grid;
@@ -1255,34 +1299,7 @@ body {
     margin-top: 2px;
   }
 
-  .educators {
-    top: 18%;
-    left: 6%;
-    width: 10%;
-  }
 
-  .students {
-    top: 18%;
-    left: 22%;
-    width: 12%;
-  }
-
-  .labs {
-    top: 18%;
-    left: 48%;
-    width: 10%;
-  }
-
-  .countries {
-    top: 65%;
-    left: 6%;
-    width: 10%;
-  }
-
-  .accredited {
-    top: 65%;
-    left: 10%;
-  }
 
   .vertical-line {
     height: 12%;
@@ -1520,7 +1537,7 @@ body {
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 900;
   color: #333;
   line-height: 1.2;
@@ -1563,16 +1580,45 @@ body {
 
 .learn-more-btn {
   background-color: #fbc02d;
-  color: black;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   padding: 4px 10px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  transition: all 0.3s ease;
   width: fit-content;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  box-shadow: 0 0 0 1px #fbc324;
+  transition: color 0.4s ease, border 0.4s ease;
+  z-index: 2;
 }
+
+
+.learn-more-btn::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  background-color: #fff;
+  z-index: -1;
+  transition: height 0.4s ease;
+}
+
+.learn-more-btn:hover::before {
+  height: 100%;
+}
+
+.learn-more-btn:hover {
+  color: #fbc324;
+  border-color: #fff;
+}
+
+
+
 
 @keyframes slideContent {
   0%,
@@ -1731,11 +1777,8 @@ body {
 @media screen and (max-width: 512px) {
   .counter-block h3 {
     font-size: 5px;
-    width: 10vw;
   }
-  .labs {
-    left: 41%;
-  }
+  
   .counter-block p {
     font-size: 8px;
   }
@@ -1776,9 +1819,6 @@ body {
     left: 5vw !important  ;
     top: -40vh !important;
     z-index: 12;
-  }
-  .learn-more-btn {
-    padding: 2px 20px;
   }
   .main-image {
     height: 60vh !important;
@@ -1902,10 +1942,10 @@ body {
   }
 
   .title {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .description {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .content-slider {
@@ -1951,6 +1991,7 @@ body {
 
   .partners-section {
     flex-direction: column;
+    
     gap: 0px;
     text-align: center;
   }
@@ -2026,7 +2067,7 @@ body {
 
   .activeity-cards {
     padding-left: 0px !important;
-    width: 100% !important;
+    width: 90% !important;
     margin: auto !important;
   }
 
@@ -2356,39 +2397,39 @@ body {
   }
 
   .counter-block h3 {
-    font-size: 7px;
+    font-size: 5px;
     font-weight: 600;
     line-height: 1.2;
   }
 
   .counter-block p {
-    font-size: 9px;
+    font-size: 8px;
     font-weight: 800;
     margin-top: 2px;
   }
 
   .educators {
     top: 18%;
-    left: 6%;
-    width: 60px;
+    left: 8%;
+    width: 10%;
   }
 
   .students {
     top: 18%;
-    left: 22%;
-    width: 90px;
+    left: 25%;
+    width: 100px;
   }
 
   .labs {
     top: 18%;
-    left: 41%;
-    width: 70px;
+    left: 43%;
+    width: 10%;
   }
 
   .countries {
     top: 65%;
-    left: 6%;
-    width: 60px;
+    left: 8%;
+    width: 5px !important;
   }
 
   .accredited {
@@ -2505,7 +2546,7 @@ body {
     margin: 0 auto;
     height: 30vh;
     min-height: 300px;
-    padding: 20px 10px;
+    padding: 25px;
     gap: 8px;
   }
 
@@ -2540,15 +2581,6 @@ body {
     line-height: 1.5;
   }
 
-  .clients-logo-7 {
-    flex-wrap: wrap;
-  }
-
-  .clients-logo-7 img {
-    width: 20vw;
-    height: auto;
-    margin-bottom: 40px;
-  }
 }
 
 /* Mobile Media Query for Section 8 */
@@ -2681,6 +2713,7 @@ body {
 @media (max-width: 768px) {
   .success-container {
     margin-top: 45px;
+    max-width: 100vw;
     padding: 0 20px;
   }
 
@@ -3360,7 +3393,7 @@ body {
   }
 
   .container {
-    top: -65vh;
+    top: -69vh;
   }
 
   .power-education-head {
@@ -3379,7 +3412,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 130px !important;
+    height: 150px !important;
   }
 }
 
@@ -3450,37 +3483,6 @@ body {
 
 
 
-.learn-more-btn {
-  position: relative;
-  overflow: hidden;
-  background: transparent;
-  color: #fff;
-  background-color: #fbc324;
-  box-shadow: 0 0 0 1px #fbc324;
-  transition: color 0.4s ease, border 0.4s ease;
-  z-index: 1;
-}
-
-.learn-more-btn::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 0%;
-  width: 100%;
-  background-color: #fff;
-  z-index: -1;
-  transition: height 0.4s ease;
-}
-
-.learn-more-btn:hover::before {
-  height: 100%;
-}
-
-.learn-more-btn:hover {
-  color: #fbc324;
-  border-color: #fff;
-}
 
 .explore-btn:hover {
   background: #fbc324;

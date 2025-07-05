@@ -11,10 +11,7 @@
 
   <title>Atlab</title>
   <style>
-    .logo-img {
-      height: 7vh;
-      width: auto;
-    }
+   
 
     @font-face {
       font-family: "poppins";
@@ -24,7 +21,6 @@
     }
 
     body {
-      font-family: "poppins", sans-serif;
 
       overflow-x: hidden;
     }
@@ -128,8 +124,7 @@
       position: relative;
       display: inline-block;
       min-width: 180px;
-      z-index: 1000;
-      font-family: sans-serif;
+      z-index: 1;
     }
 
     .dropdown-selected {
@@ -210,7 +205,7 @@
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
       max-height: 200px;
       overflow-y: auto;
-      z-index: 99999;
+      z-index: 1;
       opacity: 0;
       visibility: hidden;
       transform: translateY(-10px);
@@ -250,6 +245,7 @@
     transform: rotate(85deg);
     text-align: justify;
     }
+    
   </style>
 </head>
 
@@ -257,7 +253,7 @@
 
 
 <body>
-  <div class="flex flex-row justify-around items-center px-4 py-1" style="background-color: #ff8c00; gap:40vw">
+  <div class="flex flex-row justify-around items-center px-4 py-1 main-head" style="background-color: #ff8c00; gap:40vw">
     <span style="color: white; font-weight: 600; font-size: 14px;">
       A Centena Group Company
     </span>
@@ -293,16 +289,16 @@
 
   </div>
   <nav class="sticky top-0 z-50 bg-white  " style="z-index: 5;">
-    <div class=" hidden lg:flex flex-row px-3 items-center mx-auto" style="height: 90px; width:95vw ; justify-content: center; gap: 2vw">
+    <div class=" hidden lg:flex flex-row px-3 items-center mx-auto" style="height: 90px; width:95vw ; justify-content: center; gap: 3vw">
       <div>
         <a href="">
-          <img src="/images/SECTION 1/Atlab logo.png" class="logo-img translate-scale" alt="Atlab Logo" />
+          <img src="/images/SECTION 1/Atlab logo.png" class="logo-img" alt="Atlab Logo" />
         </a>
       </div>
       <div class="" style="margin-left: 3vw">
         <!-- <img src="/images/SECTION 1/Header sections.png" alt="" /> -->
         <ul class="hover:text-white flex flex-row text-xs lg:text-sm"
-          style="color: black; font-weight: bold; gap:1.5vw">
+          style="color: black; font-weight: bold; gap:2vw">
 
           <li class="relative group">
             <a href="#" class=" header-li">
@@ -363,19 +359,19 @@
         </ul>
       </div>
       <div>
-        <button class="text-sm text-white px-4 py-1  shop-now-btn">
+        <button class="text-md text-white px-4 py-1  shop-now-btn">
           Shop Now
         </button>
       </div>
-      <div class="translate-scale" style="position: relative;
+      <div class="" style="position: relative;
     display: flex
 ;
     align-items: center;
     width: 100%;
-    max-width: 185px;">
+    max-width: 10vw;">
         <i class="fas fa-search search-icon" onclick="$('#search-desk').submit();" style="cursor: pointer; left: 0; top: 8px;"></i>
         <input type="text" placeholder="Search" name="" class="bg-gray-100" id="" style="
-    width: 90%;
+    width: 100%;
     padding: 5px 5px 5px 30px;
     border: 0px solid #ccc;
     border-radius: 10px;
@@ -386,7 +382,7 @@
 
       </div>
       <div>
-        <button class="text-sm text-white px-4 py-1  shop-now-btn">
+        <button class="text-md text-white px-4 py-1  shop-now-btn">
           Contact
         </button>
       </div>
@@ -436,7 +432,7 @@
               </div>
             </li>
             <li>
-              <a href="#" class="block text-lg font-bold hover:text-orange-500 transition-colors" style="">Trunkey
+              <a href="#" class="block text-lg font-bold hover:text-orange-500 transition-colors" style="">
                 Higher Education</a>
             </li>
 
@@ -467,19 +463,24 @@
               Shop Now
             </button>
             <div class="flex items-center justify-center">
-              <div class="translate-scale flex flex-row bg-gray-100 gap-2 p-2" style="width: 200px; border-radius:5px">
-                <span class="cursor-pointer bg-gray-100 transition-colors" style="
-             color: rgb(80, 80, 80);
-              font-size: 24px;
-            ">🔍︎</span>
-                <input type="text" placeholder="Search" name="search" class="bg-gray-100 p-2" id="search" style="
-                width: 100%;
-              outline: none;
-              border: none;
-              font-size: 15px;
-            ">
+              <div class="" style="position: relative;
+    display: flex
+;
+    align-items: center;
+    width: 100%;
+    max-width: 60vw;">
+        <i class="fas fa-search search-icon" onclick="$('#search-desk').submit();" style="cursor: pointer; left: 0; top: 8px;"></i>
+        <input type="text" placeholder="Search" name="" class="bg-gray-100" id="" style="
+    width: 100%;
+    padding: 5px 5px 5px 30px;
+    border: 0px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #dddddd;
+    color: black !important;
+            " />
 
-              </div>
+      </div>
             </div>
             <div class="flex items-center justify-center">
 
@@ -589,7 +590,7 @@
       <div class="education-card" style="border-right: 2px solid rgb(203, 203, 203)">
         <div class="card-content">
           <div class="card-header">
-            <h2 class="card-title">K-12 Education</h2>
+            <h2 class="card-title">K-12 Education <span style="font-size: 15px;">🡲</span></h2>
             <p class="card-description">
               Engage students like never before with hands-on learning,
               creativity, and curiosity. Discover our innovative solutions to
@@ -613,7 +614,7 @@
       </div>
       <div class="education-card">
         <div class="card-header">
-          <h2 class="card-title">Higher Education</h2>
+          <h2 class="card-title">Higher Education <span style="font-size: 15px;">🡲</span></h2>
           <p class="card-description">
             Bridge the gap between academics and industry with future-ready
             labs, real-world tools, and next-gen skills.
@@ -822,7 +823,7 @@
     </div>
 
     <div class="flex justify-center items-center">
-      <div class="he-card-container" style="width: 90%;">
+      <div class="he-card-container" style="width: 87%;">
         <div class="he-card">
           <img class="he-bg" src="/images/HED Tab Open File/Higher Education-assets/card 17.png"
             alt="Card Background" />
@@ -1021,9 +1022,9 @@
             max-width:100%;
             position: absolute;
             color: white;
-            font-family: 'poppins';
             font-weight: 900;
-            font-size: 40px;
+            font-size: 45px;
+            line-height: 1.2;
             margin-top: 80px;
             height: 100%;
 
@@ -1038,9 +1039,8 @@
           max-width: 100%;
           position: absolute;
           color: white;
-          font-family: 'poppins';
           font-weight: 500;
-          font-size: 12px;
+          font-size: 15px;
           width: 50%;
           height: 100%;
         ">
@@ -1116,10 +1116,10 @@
           <!-- Slide 1 -->
           <div class="slide-content-a active slide-1 flex justify-center items-center flex-col">
             <img src="/images/SECTION 3/Icon 1.png" alt="" />
-            <h1 class="text-sm md:text-lg text-white" style="text-align: center">
+            <h1 class="text-sm md:text-xl text-white" style="text-align: center">
               400+ Years of Expertise. One Vision 1.
             </h1>
-            <p class="text-xs md:text-sm text-white" style="text-align: center">
+            <p class="text-xs md:text-md text-white" style="text-align: center">
               Transform classrooms into dynamic hubs with 400+ man-years of
               combined experience.
             </p>
@@ -1128,10 +1128,10 @@
           <!-- Slide 2 -->
           <div class="slide-content-a slide-2 flex justify-center items-center flex-col">
             <img src="/images/SECTION 3/Icon 2.png" alt="" />
-            <h1 class="text-sm md:text-lg text-white" style="text-align: center">
+            <h1 class="text-sm md:text-xl text-white" style="text-align: center">
               Your Vision, Our Blueprint.
             </h1>
-            <p class="text-xs md:text-sm text-white" style="text-align: center">
+            <p class="text-xs md:text-md text-white" style="text-align: center">
               End-to-end lab design integrated with your educational goals.
             </p>
           </div>
@@ -1139,10 +1139,10 @@
           <!-- Slide 3 -->
           <div class="slide-content-a slide-3 flex justify-center items-center flex-col">
             <img src="/images/SECTION 3/Icon 3.png" alt="" />
-            <h1 class="text-sm md:text-lg text-white" style="text-align: center">
+            <h1 class="text-sm md:text-xl text-white" style="text-align: center">
               Growth Partners, Not Vendors.
             </h1>
-            <p class="text-xs md:text-sm text-white" style="text-align: center">
+            <p class="text-xs md:text-md text-white" style="text-align: center">
               We are here to mentor and co-create labs that amplify curriculum
               impact and provide real-world skills.
             </p>
@@ -1150,10 +1150,10 @@
 
           <div class="slide-content-a slide-1 flex justify-center items-center flex-col">
             <img src="/images/SECTION 3/Icon 4.png" alt="" />
-            <h1 class="text-sm md:text-lg text-white" style="text-align: center">
+            <h1 class="text-sm md:text-xl text-white" style="text-align: center">
               Built for Educators by Students.
             </h1>
-            <p class="text-xs md:text-sm text-white" style="text-align: center">
+            <p class="text-xs md:text-md text-white" style="text-align: center">
               Tools that teach Knowledge through experiments. Versatile
               teaching resources for every student.
             </p>
@@ -1161,10 +1161,10 @@
 
           <div class="slide-content-a slide-1 flex justify-center items-center flex-col">
             <img src="/images/SECTION 3/Icon 5.png" alt="" />
-            <h1 class="text-sm md:text-lg text-white" style="text-align: center">
+            <h1 class="text-sm md:text-xl text-white" style="text-align: center">
               Precision Meets Practicality.
             </h1>
-            <p class="text-xs md:text-sm text-white" style="text-align: center">
+            <p class="text-xs md:text-md text-white" style="text-align: center">
               With Certified professionals and high-accuracy setups as per
               international standards.
             </p>
@@ -1172,10 +1172,10 @@
 
           <div class="slide-content-a slide-1 flex justify-center items-center flex-col">
             <img src="/images/SECTION 3/Icon 6.png" alt="" />
-            <h1 class="text-sm md:text-lg text-white" style="text-align: center">
+            <h1 class="text-sm md:text-xl text-white" style="text-align: center">
               Seamless Support, Always.
             </h1>
-            <p class="text-xs md:text-sm text-white" style="text-align: center">
+            <p class="text-xs md:text-md text-white" style="text-align: center">
               Our AMC's are maintenance-free with 24/7 monitoring support
               across all nations.
             </p>
@@ -1189,7 +1189,7 @@
     <h1 class="text-4xl font-bold mb-10 power-head section">
       You Power Education. We Power You.
     </h1>
-    <p class="text-sm mb-20 power-header-desc section">
+    <p class="text-md mb-20 power-header-desc section">
       Whether you are an educator, instructor, or faculty - ATLAB <br />
       offers tailored solutions that empower every step of the <br />
       educational journey.
@@ -1201,18 +1201,17 @@
         class="power-education-image section" alt="" />
       <span class="text-center power-education-head section" style="
             width: 22vw;
-            font-size: small;
+            font-size: medium;
             border-bottom: 1px solid #000;
             margin-bottom: 20px;
             background-color: #12737a;
             color: white;
-            padding: 4px 30px;
           ">
         For Educational Institutions
       </span>
       <span class="text-center power-education-span section" style="
             width: 22vw;
-            font-size: small;
+            font-size: medium;
             border-bottom: 3px solid rgb(189, 189, 189);
             margin-bottom: 20px;
             background-color: white;
@@ -1225,7 +1224,7 @@
       </span>
       <span class="text-center power-education-span section" style="
             width: 22vw;
-            font-size: small;
+            font-size: medium;
             margin-bottom: 20px;
             background-color: white;
             color: #003638;
@@ -1241,18 +1240,17 @@
         class="power-education-image section" />
       <span class="text-center power-education-head section" style="
             width: 22vw;
-            font-size: small;
+            font-size: medium;
             border-bottom: 1px solid #000;
             margin-bottom: 20px;
             background-color: #12737a;
             color: white;
-            padding: 4px 30px;
           ">
         For Educators & Administrators
       </span>
       <span class="text-center power-education-span section" style="
             width: 22vw;
-            font-size: small;
+            font-size: medium;
             border-bottom: 3px solid rgb(189, 189, 189);
             margin-bottom: 20px;
             background-color: white;
@@ -1265,7 +1263,7 @@
       </span>
       <span class="text-center power-education-span section" style="
             width: 22vw;
-            font-size: small;
+            font-size: medium;
             margin-bottom: 20px;
             background-color: white;
             color: #003638;
@@ -1280,18 +1278,17 @@
         class="power-education-image section" />
       <span class="text-center power-education-head section" style="
             width: 22vw;
-            font-size: small;
+            font-size: medium;
             border-bottom: 1px solid #000;
             margin-bottom: 20px;
             background-color: #12737a;
             color: white;
-            padding: 4px 30px;
           ">
         For Corporate & Industrial Clients
       </span>
       <span class="text-center power-education-span section" style="
             width: 18vw;
-            font-size: small;
+            font-size: medium;
             border-bottom: 3px solid rgb(189, 189, 189);
             margin-bottom: 20px;
             background-color: white;
@@ -1303,7 +1300,7 @@
       </span>
       <span class="text-center power-education-span section" style="
             width: 21vw;
-            font-size: small;
+            font-size: medium;
             margin-bottom: 20px;
             background-color: white;
             color: #003638;
@@ -1318,18 +1315,17 @@
         class="power-education-image section" />
       <span class="text-center power-education-head section" style="
             width: 22vw;
-            font-size: small;
+            font-size: medium;
             border-bottom: 1px solid #000;
             margin-bottom: 20px;
             background-color: #12737a;
             color: white;
-            padding: 4px 30px;
           ">
         For Students
       </span>
       <span class="text-center power-education-span section" style="
             width: 15vw;
-            font-size: small;
+            font-size: medium;
             border-bottom: 3px solid rgb(189, 189, 189);
             margin-bottom: 20px;
             background-color: white;
@@ -1341,7 +1337,7 @@
       </span>
       <span class="text-center power-education-span section" style="
             width: 18vw;
-            font-size: small;
+            font-size: medium;
             margin-bottom: 20px;
             background-color: white;
             color: #003638;
@@ -1381,7 +1377,7 @@
         <p data-target="6" data-suffix="" data-prefix="0">0</p>
       </div>
 
-      <div class="counter-block flex flex-col gap-5 accredited">
+      <div class="counter-block flex flex-col gap-1 lg:gap-5 accredited">
         <h3>Accredited</h3>
         <p>STEM.org</p>
       </div>
@@ -1514,13 +1510,16 @@
     </div>
   </div>
 
-  <div class="clients-logo-7 section">
+<div class="clients-logo-carousel">
+        <div class="clients-logo-track" id="logoTrack">
     <img src="images/new/hafele.png" alt="clients-logos" />
     <img src="images/new/hafele.png" alt="clients-logos" />
-
     <img src="images/new/hafele.png" alt="clients-logos" />
     <img src="images/new/hafele.png" alt="clients-logos" />
   </div>
+</div>
+
+
 
   <!-- Section 8 -->
   <div class="section8">
@@ -1850,6 +1849,47 @@
   </div>
 
   <script>
+  document.addEventListener('DOMContentLoaded', function() {
+            const track = document.getElementById("logoTrack");
+            const carousel = document.querySelector('.clients-logo-carousel');
+            
+            // Get original logos
+            const originalLogos = Array.from(track.children);
+            
+            // Calculate how many sets we need for smooth infinite scroll
+            const trackWidth = track.scrollWidth;
+            const carouselWidth = carousel.offsetWidth;
+            
+            // We need at least 2 full sets, but add more if needed for smooth scrolling
+            const minSets = Math.max(2, Math.ceil(carouselWidth / trackWidth) + 1);
+            
+            // Clone the logos to create enough sets
+            for (let i = 1; i < minSets; i++) {
+                originalLogos.forEach(logo => {
+                    const clone = logo.cloneNode(true);
+                    track.appendChild(clone);
+                });
+            }
+            
+            // Calculate the exact translation distance (width of one complete set)
+            const oneSetWidth = trackWidth;
+            const totalWidth = track.scrollWidth;
+            
+            // Update CSS animation to match the calculated width
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes scroll-left {
+                    0% {
+                        transform: translateX(0);
+                    }
+                    100% {
+                        transform: translateX(-${oneSetWidth}px);
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+        });
+  
     const mobileMenuButton = document.getElementById("mobile-menu-button");
     const mobileMenu = document.getElementById("mobile-menu");
     const closeMenu = document.getElementById("close-menu");
@@ -1920,21 +1960,28 @@
     }
 
     function goToSlide(index) {
-      const contentSlides = document.querySelectorAll(".slide-content");
-      const imageSlides = document.querySelectorAll(".slider-image");
+  const contentSlides = document.querySelectorAll(".slide-content");
+  const imageSlides = document.querySelectorAll(".slider-image");
 
-      // Remove 'active' from all slides
-      contentSlides.forEach(slide => slide.classList.remove("active"));
-      imageSlides.forEach(image => image.classList.remove("active"));
+  // Instead of removing 'active', use opacity
+  contentSlides.forEach(slide => {
+    slide.classList.remove("active");
+    slide.style.opacity = "0";
+    slide.style.pointerEvents = "none";
+  });
+  
+  imageSlides.forEach(image => image.classList.remove("active"));
 
-      // Add 'active' to the current index
-      contentSlides[index].classList.add("active");
-      imageSlides[index].classList.add("active");
+  // Show current slide
+  contentSlides[index].classList.add("active");
+  contentSlides[index].style.opacity = "1";
+  contentSlides[index].style.pointerEvents = "auto";
+  
+  imageSlides[index].classList.add("active");
 
-      updateActiveDot(index);
-      currentSlide = index;
-    }
-
+  updateActiveDot(index);
+  currentSlide = index;
+}
 
     function nextSlide() {
       let nextIndex = (currentSlide + 1) % totalSlides;
