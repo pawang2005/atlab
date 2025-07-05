@@ -105,13 +105,14 @@ body {
   grid-template-columns: repeat(4, calc(30% - 85px));
   /* margin-left: 120px; */
   justify-content: center;
-  margin-top: -250px;
+  margin-top: -210px;
   text-align: center;
 }
 
 .he-card {
   position: relative;
-  width: 25vw;
+  width: 24vw;
+  height: 330px;
   justify-self: center;
 }
 
@@ -233,7 +234,6 @@ body {
 /* section 2 partners*/
 .partners-container {
   max-width: 1200px;
-  margin: 0 auto;
   margin-bottom: 10px;
 }
 
@@ -287,7 +287,7 @@ body {
 
 .counter-block {
   position: absolute;
-  color: white;
+  color: rgb(240, 240, 240);
   text-align: center;
   font-family: sans-serif;
   text-align: left;
@@ -306,36 +306,32 @@ body {
   font-size: 26px;
   font-weight: 800;
   width: 100%;
-  background: linear-gradient(45deg, #ffffff, #f0f0f0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  color: #fff;
 }
 
 .educators {
   top: 20%;
   left: 10%;
-  width: 130px;
+  width: 10%;
 }
 
 .students {
   top: 20%;
   left: 25%;
-  width: 200px;
+  width: 12%;
 }
 
 .labs {
   top: 20%;
-  left: 40%;
+  left: 41%;
   transform: translateX(-50%);
-  width: 130px;
+  width: 10%;
 }
 
 .countries {
   top: 60%;
   left: 10%;
-  width: 100px;
+  width: 8%;
 }
 
 .accredited {
@@ -533,11 +529,9 @@ body {
   grid-template-columns: 2.5fr 1.5fr 1.5fr;
   grid-template-rows: 1.5fr 1fr;
   gap: 10px;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 91vw;
   height: 80vh;
   min-height: 600px;
-  padding: 50px;
   box-sizing: border-box;
 }
 .grid-item {
@@ -596,7 +590,7 @@ body {
 
 .client-section {
   text-align: center;
-  padding: 60px 20px;
+  padding: 20px 20px;
   background-color: white;
 }
 
@@ -717,8 +711,7 @@ body {
 
 /* Success */
 .success-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 90vw;
   margin-top: 100px;
 }
 
@@ -991,7 +984,6 @@ body {
     background-color: #070f18;
     color: #c0c0c0;
     margin-top: 50px;
-    padding: 0px 100px;
     padding-bottom: 50px;
     position: relative;
     z-index: 1;
@@ -1266,30 +1258,30 @@ body {
   .educators {
     top: 18%;
     left: 6%;
-    width: 60px;
+    width: 10%;
   }
 
   .students {
     top: 18%;
     left: 22%;
-    width: 90px;
+    width: 12%;
   }
 
   .labs {
     top: 18%;
     left: 48%;
-    width: 70px;
+    width: 10%;
   }
 
   .countries {
     top: 65%;
     left: 6%;
-    width: 60px;
+    width: 10%;
   }
 
   .accredited {
     top: 65%;
-    left: 19%;
+    left: 10%;
   }
 
   .vertical-line {
@@ -1573,7 +1565,7 @@ body {
   background-color: #fbc02d;
   color: black;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
   padding: 4px 10px;
   border: none;
   border-radius: 20px;
@@ -1683,6 +1675,13 @@ body {
   color: #1a202c;
   margin-bottom: 20px;
   line-height: 1.2;
+  transition: color 0.1s ease, text-decoration 0.1s ease;
+}
+
+.card-title:hover {
+  color: #fbc02d;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .card-description {
